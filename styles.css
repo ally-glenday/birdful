@@ -166,27 +166,62 @@ input{
 
 
   /* ----- Targets All Bird ID Cards ------- */ 
+
+  /* Whole bird id card div */
   .bird-id-card {
-    width: 80vw;
-    height: 80vw;
-    border: 5px solid #3E3E3E;
-    border-radius: 5px;
+    width: 90vw;
+    height: 90vw;
+    margin: 0 auto;
+    /* border: 5px solid #3E3E3E;
+    border-radius: 5px; */
 
   }
 
+  /* Bird illustration & bird name div */
+  .bird-picture{
+    border: 5px solid #3E3E3E;
+    border-radius: 5px; 
+  }
+
+  .bird-id-card h1{
+    margin-top: 0;
+    padding: 3% 0;
+    background-color: #3E3E3E;
+    color: white;
+    width: 100%;
+
+    font-weight: 600;
+    font-size: 9vw;
+    letter-spacing: 2px;
+  }
+
+  .bird-id-card p{
+    padding: 5% 3%;
+    line-height: 1.2;
+  }
+
+/* Displays ul as grid (bird key info) */
   .bird-id-card ul{
     display: grid;
     grid-template-columns: 40vw 40vw;
     font-weight: 500;
+    background-color: #dff3e2;
   }
+
+  .bird-id-card li{
+    padding: 5%;
+    margin: 5%;
+  }
+
+ 
 
 
 
   /* ----- Targets Blue Tit ID Page ------- */ 
    
    img[src="draft_images/Blue_Tit_(test).svg"]{
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
    }
 
 
