@@ -49,19 +49,22 @@ table {
 	border-spacing: 0;
 }
 
-
+*{
+  box-sizing: border-box;
+}
 
 
 /* -------------- End of reset ------------- */ 
 
 /* Declaring colours as CSS custom variables */ 
 body {
-    --mainBackgroundColour: #F7EAD9; /* Checked against forground colour and is accessible on WebAIM */
+    --mainBackgroundColour: #F7EAD9; /* Checked against foreground colour on WebAIM and is accessible */
     --mainBodyTextColour: #4D4D4D;
     font-family: 'Jost';
     background-color: var(--mainBackgroundColour);
   }
 
+/* Setting all headings and paragraphs to dark grey (text colour) */
 h1, h2, h3, h4, h5, h5, h6, p{
     color: var(--mainBodyTextColour);
 
@@ -205,7 +208,9 @@ input{
     display: grid;
     grid-template-columns: 40vw 40vw;
     font-weight: 500;
-    background-color: #dff3e2;
+    background-color: #f1f3df;
+    border: var(--mainBodyTextColour) solid 5px;
+    border-radius: 25px;
   }
 
   .bird-id-card li{
@@ -213,6 +218,9 @@ input{
     margin: 5%;
   }
 
+  audio{
+    max-width: 50%;
+  }
  
 
 
