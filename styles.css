@@ -83,8 +83,9 @@ h1{
 /* Targets search and home menu icons */ 
 nav img{
     position: relative;
-    left: 80%;
-    margin-top: 5%;
+    left: 69%;
+    margin: 8% 0 5% 0;
+    padding: .5%;
 }
 
 /* a[href*="w3schools"]{
@@ -95,7 +96,7 @@ nav img{
 /* Targets main homepage SVG image of Kingfisher and river scene */ 
 img[src="images/nature-scene.svg"]{
     max-width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 
 /* Targets homepage navigation to different sections, e.g. 'Identify a Bird' */ 
@@ -115,7 +116,7 @@ a[href="bird_id.html"]{
    letter-spacing: 2px;
    text-transform: uppercase;
    text-decoration: none;
-   margin-top: 10%;
+   margin-top: 10%;   
    margin-left: 30%;
    padding: 5%;
    border-radius: 30px;
@@ -145,7 +146,10 @@ input{
   }
 
 
-  /* ----- Page #2 Bird List - Section Styling ------- */ 
+/* ----- Bird ID List Page  ------- */ 
+
+  /* ----- Targets Bird List Nav (Gardens, Forests etc) ------- */ 
+
 
   #bird-list h2{
     font-size: 6vw;
@@ -153,19 +157,46 @@ input{
     text-align: center;
   }
 
-  #bird-list ul{
+
+#bird-list ul{
       display: flex;
-      justify-content: center;
-    
+      justify-content: space-between;
+      max-width: 90%;
+      margin: 0 auto;
   }
 
-  h2{
+#bird-list a[href="gardens-and-parks"], a[href="forests-and-woodlands"], a[href="ponds-and-water"]{
+  height: 25vw;
+  width: 25vw;
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  padding-top: 15%;
+  font-size: 3.5vw;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ded2c2;
+  background-color: #ded2c2;
 
-  }
+}
+
+#bird-list a[href="gardens-and-parks"]{
+  background-image: url("draft_images/habitat_gardens.svg");
   
+}
+
+#bird-list a[href="forests-and-woodlands"]{
+  background-image: url("draft_images/habitat_woodlands.svg");
+} 
+
+#bird-list a[href="ponds-and-water"]{
+  background-image: url("draft_images/habitat_ponds.svg");
+} 
 
 
-  /* ----- Targets Bird List Nav (Gardens, Forests etc) ------- */ 
+
+
+
 
 
   /* ----- Targets All Bird ID Cards ------- */ 
@@ -185,7 +216,7 @@ input{
     border: 5px solid #3E3E3E;
     border-radius: 5px; 
   }
-
+/* Targets bird card name, e.g. Blue Tit */ 
   .bird-id-card h1{
     margin-top: 0;
     padding: 3% 0;
@@ -197,7 +228,7 @@ input{
     font-size: 9vw;
     letter-spacing: 2px;
   }
-
+/* Targets bird card paragraphs, top and bottom */ 
   .bird-id-card p{
     padding: 5% 3%;
     line-height: 1.2;
@@ -213,11 +244,14 @@ input{
     border-radius: 25px;
   }
 
+/* Targets bird card key info */ 
   .bird-id-card li{
     padding: 5%;
     margin: 5%;
+    text-align: end;
   }
 
+  /* Targets bird call element */ 
   audio{
     max-width: 50%;
   }
@@ -226,11 +260,11 @@ input{
 
 
   /* ----- Targets Blue Tit ID Page ------- */ 
-   
+/*    
    img[src="draft_images/Blue_Tit_(test).svg"]{
     height: 100%;
     width: 100%;
-   }
+   } */
 
 
  
