@@ -69,14 +69,19 @@ h1, h2, h3, h4, h5, h5, h6, p{
     color: var(--mainBodyTextColour);
 
 }
-
+/* Generic styling for all h1 tags */
 h1{
-    font-size: 7.5vw;
     font-weight: 700;
     text-align: center;
-    margin-top: 20%;
-    max-width: 100%;
-    line-height: 120%;
+}
+/* Targets main homepage h1 tag, i.e. 'Discover birds with Birds */ 
+#main-page-heading{
+  font-size: 7.5vw;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20%;
+  max-width: 100%;
+  line-height: 120%;
 }
 
 
@@ -165,32 +170,33 @@ input{
       margin: 0 auto;
   }
 
-#bird-list a[href="gardens-and-parks"], a[href="forests-and-woodlands"], a[href="ponds-and-water"]{
+#bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
   height: 25vw;
   width: 25vw;
   background-size: 100%;
   background-repeat: no-repeat; 
-  padding-top: 15%;
-  font-size: 3.5vw;
+  padding: 15% 3%;
+  font-size: 3.3vw;
   text-align: center;
   font-weight: 600;
   text-decoration: none;
-  color: #ded2c2;
-  background-color: #ded2c2;
 
 }
 
-#bird-list a[href="gardens-and-parks"]{
+#bird-list a[href="#gardens_and_parks"]{
   background-image: url("draft_images/habitat_gardens.svg");
-  
+  color: rgb(231, 231, 211);
+
 }
 
-#bird-list a[href="forests-and-woodlands"]{
+#bird-list a[href="#forests_and_woodlands"]{
   background-image: url("draft_images/habitat_woodlands.svg");
+  color: beige;
 } 
 
-#bird-list a[href="ponds-and-water"]{
+#bird-list a[href="#ponds_and_water"]{
   background-image: url("draft_images/habitat_ponds.svg");
+  color: beige;
 } 
 
 
@@ -201,7 +207,7 @@ input{
 
   /* ----- Targets All Bird ID Cards ------- */ 
 
-  /* Whole bird id card div */
+  /* Entire bird id card div */
   .bird-id-card {
     width: 90vw;
     height: 90vw;
@@ -211,10 +217,11 @@ input{
 
   }
 
-  /* Bird illustration & bird name div */
+  /* Bird card illustration & bird name container only */
   .bird-picture{
     border: 5px solid #3E3E3E;
     border-radius: 5px; 
+    box-shadow: 0px 0px 10px 0px #8a8a8a;
   }
 /* Targets bird card name, e.g. Blue Tit */ 
   .bird-id-card h1{
@@ -237,9 +244,9 @@ input{
 /* Displays ul as grid (bird key info) */
   .bird-id-card ul{
     display: grid;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 50fr 50fr;
     font-weight: 500;
-    background-color: #f1f3df;
+    background-color: #eceae2;
     border: var(--mainBodyTextColour) solid 5px;
     border-radius: 25px;
   }
@@ -248,23 +255,30 @@ input{
   .bird-id-card li{
     padding: 5%;
     margin: 5%;
-    text-align: end;
+    align-self: start;
+    
   }
+  
+  img[src="draft_images/calendar.svg"], img[src="draft_images/woodlands_icon.svg"], img[src="draft_images/bird_size_icon_v2.svg"], img[src="draft_images/bird_call_icon_v2.svg"]{
+  
+    background-color: red;
+    margin: 0 5%;
+}
+  
 
   /* Targets bird call element */ 
   audio{
     max-width: 50%;
   }
  
+  
+.list-bird-card{
+  background-color: rgb(114, 114, 114);
+}
 
 
 
-  /* ----- Targets Blue Tit ID Page ------- */ 
-/*    
-   img[src="draft_images/Blue_Tit_(test).svg"]{
-    height: 100%;
-    width: 100%;
-   } */
+
 
 
  
