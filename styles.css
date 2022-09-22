@@ -156,21 +156,21 @@ input{
   /* ----- Targets Bird List Nav (Gardens, Forests etc) ------- */ 
 
 
-  #bird-list h2{
+.bird-list h2{
     font-size: 6vw;
     font-weight: 700;
     text-align: center;
   }
 
 
-#bird-list ul{
+.bird-list ul{
       display: flex;
       justify-content: space-between;
       max-width: 90%;
       margin: 0 auto;
   }
 
-#bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
+.bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
   height: 25vw;
   width: 25vw;
   background-size: 100%;
@@ -183,18 +183,18 @@ input{
 
 }
 
-#bird-list a[href="#gardens_and_parks"]{
+.bird-list a[href="#gardens_and_parks"]{
   background-image: url("draft_images/habitat_gardens.svg");
   color: rgb(231, 231, 211);
 
 }
 
-#bird-list a[href="#forests_and_woodlands"]{
+.bird-list a[href="#forests_and_woodlands"]{
   background-image: url("draft_images/habitat_woodlands.svg");
   color: beige;
 } 
 
-#bird-list a[href="#ponds_and_water"]{
+.bird-list a[href="#ponds_and_water"]{
   background-image: url("draft_images/habitat_ponds.svg");
   color: beige;
 } 
@@ -261,19 +261,25 @@ input{
   
   img[src="draft_images/calendar.svg"], img[src="draft_images/woodlands_icon.svg"], img[src="draft_images/bird_size_icon_v2.svg"], img[src="draft_images/bird_call_icon_v2.svg"]{
   
-    background-color: red;
+    /* background-color: red; */
     margin: 0 5%;
 }
   
 
-  /* Targets bird call element */ 
-  audio{
+/* Targets bird call element */ 
+
+audio{
     max-width: 50%;
   }
  
   
 .list-bird-card{
-  background-color: rgb(114, 114, 114);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  border-radius: 10px;
+  border: #a8a8a1 solid 2px;
 }
 
 
