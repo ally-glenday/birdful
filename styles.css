@@ -270,18 +270,54 @@ input{
 
 audio{
     max-width: 50%;
+    margin-top: 10%;
   }
  
-  
+
+/* Targets entire bird card */ 
 .list-bird-card{
   background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  max-width: 80vw;
+  max-width: 40vw;
+  max-height: 40vh;
   border-radius: 10px;
   border: #a8a8a1 solid 2px;
 }
 
+/* Targets bird image on card (id page) */ 
+.list-bird-card img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+/* Targets bird card main bird name, e.g. 'Blue Tit' */
+.list-bird-card a{
+  font-size: 4vh;
+  background-color: #3E3E3E;
+  color: #eceae2;
+  text-decoration: none;
+  min-width: 10vw;
+  min-height: 10vh;
+}
+
+/* Targets key icons and sets as grid */
+.list-bird-card ul{
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  font-size: 2vw;
+}
+
+/* Targets icons size */
+.list-bird-card ul img{
+  height: 4vh;
+  width: 4vw;
+
+}
+
+
+   
+ 
 
 
 
