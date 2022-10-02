@@ -280,14 +280,15 @@ audio{
   max-width: 40vw;
   max-height: 40vh;
   border-radius: 10px;
-  border: #a8a8a1 solid 2px;
+  border: #a8a8a1 solid 2.5px;
 }
 
 /* Targets bird image on card (id page) */ 
-.list-bird-card img{
+.list-bird-card a > img{
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border: #a8a8a1 .1px solid;
+  border-radius: 5px 5px 0px 0px; 
 }
 
 
@@ -308,10 +309,17 @@ audio{
   font-size: 2vw;
 }
 
-/* Targets icons size */
+/* Targets icons */
 .list-bird-card ul img{
   height: 4vh;
   width: 4vw;
+
+}
+
+/* Targets id audio */ 
+.list-bird-card audio{
+  min-width: 10%;
+  min-height: 10%;
 
 }
 
