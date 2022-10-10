@@ -9,37 +9,45 @@
   </head>
   <body>
     <nav>    
-      <img src="images/search-icon-final.svg" width="40" height="40" alt="Search icon, a dark grey magnifiying glass">
-      <img src="images/home-button-final.svg" width="40" height="40" alt="Home icon, a dark grey bird house">
+      <img src="images/search-icon-final.svg" width="50" height="50" alt="Search icon, a dark grey magnifiying glass">
+      <img src="images/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
 
   <!-- End of search bar -->
     </nav>
 
-    <h1>Find a Bird</h1>
+    <h1>Find a Bird<span class="small-text">by Habitat</span></h1>
     
       <section class="bird-list">
-        <h2>Habitat</h2>
         <nav>
           <ul>
-            <a href="#gardens_and_parks"><li>Gardens & Parks</li></a>
-            <a href="#forests_and_woodlands"><li>Forest & Woodlands</li></a>
-            <a href="#ponds_and_water"><li>Water & Ponds</li></a>
+            <li><a href="#gardens_and_parks">Gardens & Parks</a></li>
+            <li><a href="#forests_and_woodlands">Forest & Woodlands</a></li>
+            <li><a href="#ponds_and_water">Ponds & Water</a></li>
           </ul>
         </nav>
 
         <!--Jumps to Gardens and Park section-->
         <section id="gardens_and_parks">
-          <h3>Gardens and Parks</h3>
-          <img src="images/main_gardens_final.svg" height="100%" width="100%" alt="">
-          <img src="images/main_woodlands_final.svg" height="100%" width="100%" alt="">
-          <img src="images/main_ponds_final.svg" height="100%" width="100%" alt="">
+          <h2>Gardens & Parks</h2>
+          <img src="images/main_gardens_final.svg" alt="Simple graphic illustration of a city park, with a cityscape in the background at sunset">
+          <img src="images/main_woodlands_final.svg" alt="Simple graphic illustration of woodland trees at sunset">
+          <img src="images/main_ponds_final.svg" alt="Simple graphic illustration of a pond with a lily pad and reeds at sunset">
               <div class="flex-container">
                 <div class="list-bird-card">
           
 
                 <a href="blue_tit.html"><img src="draft_images/Blue_Tit_1500px.jpg" width="100" height="100" alt="Illustration of a Blue Tit"><p>Blue Tit</p></a>
 
+                <button onclick="playBirdCall()" type="button">Play Bird Call   <audio id="blue-tit-call" controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
+                  Sorry, but it appears your browser does not support the audio element.
+                  </audio></button>
+                <button onclick="pauseBirdCall()" type="button">Pause Bird Call</button><br> 
+
                 
+            
+
+        
+                              
                 <ul>
                   <li><img src="draft_images/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar">All Year</li>
 
@@ -47,9 +55,11 @@
                   
                   <li><img src="draft_images/bird_size_icon_v2.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size">Very small <span>(12cm)</span></li>
                   
-                  <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping ">Bird call  <audio controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
-                    Sorry, but it appears your browser does not support the audio element.
-                    </audio></li>
+                  <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping ">Bird call</li>
+
+                    <!-- <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping ">Bird call  <audio controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
+                      Sorry, but it appears your browser does not support the audio element.
+                      </audio></li> -->
                   </ul>
                 </div> <!--Closing list-bird-card div-->
 
@@ -74,11 +84,24 @@
            </div> <!--Closing flex-container div-->
           
     
-        </section>
-        
+        </section> <!--Closing gardens_and_parks section-->
+        <section id="forests_and_woodlands">
+          <h2>Forests & Woodlands</h2>
 
-      </section>
-    
+        </section> <!--Closing forests_and_woodlands section-->
+
+      </section> <!--Closing .bird list section-->
+      <script> 
+        var birdCall = document.getElementById("blue-tit-call"); 
+        
+        function playBirdCall() { 
+          birdCall.play(); 
+        }   
+        
+        function pauseBirdCall() { 
+          birdCall.pause(); 
+        } 
+        </script> 
      
  
 

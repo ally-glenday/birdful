@@ -74,6 +74,9 @@ h1{
     font-weight: 700;
     text-align: center;
 }
+
+
+/* ------------------------------  HOMEPAGE ---------------------------------------------- */ 
 /* Targets main homepage h1 tag, i.e. 'Discover birds with Birds */ 
 #main-page-heading{
   font-size: 7.5vw;
@@ -99,18 +102,15 @@ nav img{
 
 
 /* Targets main homepage SVG image of Kingfisher and river scene */ 
-img[src="images/nature-scene.svg"]{
+/* img[src="images/nature-scene.svg"]{
     max-width: 100vw;
     min-height: 100vh;
-}
+} */
 
 /* Targets homepage navigation to different sections, e.g. 'Identify a Bird' */ 
 #homepage-flexbox{
     display: flex;
 }
-
-/* Good way to select links, avoids classes again */ 
-
 
 a[href="bird_id.html"]{
   display: inline-block;
@@ -129,14 +129,18 @@ a[href="bird_id.html"]{
 }
 
 
+/* Set a background color for all <ul> elements that are preceded by a <p> element with the same parent:
+p ~ ul {
+  background: #ff0000;
+} */
 
 /* --------------------- Search bar styling ------------------------- */ 
 
 
-input{
+/* input{
     color: var(--mainBodyTextColour);
     border: black 5px solid;
-    border-radius: 40px;
+    border-radius: 40px;  
     padding: 1%;
     min-width: 500px;
     
@@ -148,21 +152,19 @@ input{
 
   a{
     color: #3E3E3E;
-  }
+  } */
 
 
-/* ----- Bird ID List Page  ------- */ 
+/* ------------------------------  BIRD ID PAGE ---------------------------------------------- */ 
 
-  /* ----- Targets Bird List Nav (Gardens, Forests etc) ------- */ 
-
-
+/* ----- Bird ID List Page h2  ------- */ 
 .bird-list h2{
     font-size: 6vw;
     font-weight: 700;
     text-align: center;
   }
 
-
+/* ----- Targets Bird List ul (Gardens, Forests etc) ------- */ 
 .bird-list ul{
       display: flex;
       justify-content: space-between;
@@ -170,40 +172,34 @@ input{
       margin: 0 auto;
   }
 
+/* ----- Bird ID List Page background images  ------- */ 
 .bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
+  display: inline-block;
   height: 25vw;
   width: 25vw;
   background-size: 100%;
   background-repeat: no-repeat; 
-  padding: 15% 3%;
+  padding: 55% 10%;
   font-size: 3.3vw;
   text-align: center;
   font-weight: 600;
   text-decoration: none;
+  margin-top: 5%;
+  color: beige;
 
 }
 
 .bird-list a[href="#gardens_and_parks"]{
   background-image: url("draft_images/habitat_gardens.svg");
-  color: rgb(231, 231, 211);
-
 }
 
 .bird-list a[href="#forests_and_woodlands"]{
   background-image: url("draft_images/habitat_woodlands.svg");
-  color: beige;
 } 
 
 .bird-list a[href="#ponds_and_water"]{
   background-image: url("draft_images/habitat_ponds.svg");
-  color: beige;
 } 
-
-
-
-
-
-
 
   /* ----- Targets All Bird ID Cards ------- */ 
 
@@ -268,10 +264,10 @@ input{
 
 /* Targets bird call element */ 
 
-audio{
+/* audio{
     max-width: 50%;
     margin-top: 10%;
-  }
+  } */
 
  /* Creates flexbox container for all bird cards on ID page */ 
 .flex-container{
@@ -342,13 +338,43 @@ audio{
 
 }
 
-   
- 
+/* Targets bird id h2s (gardens and parks) */ 
+#gardens_and_parks h2{
+  position: relative;
+  top: 5em;
+  font-size: 10vw; 
+  
+
+}
+
+/* Sets all main SVGs (gardens, woodlands, ponds) so they take up full width of the screen */ 
+img[src="images/main_gardens_final.svg"], [src="images/main_woodlands_final.svg"], [src="images/main_ponds_final.svg"], img[src="images/nature-scene.svg"]{
+  width: 100%;
+  height: auto;
+}
+
+
+/* Sets all elements t */ 
+html{
+  scroll-behavior: smooth;
+}
+
+/* audio{
+  background-image: url("draft_images/bird_call_icon.svg");
+  background-color: var(--mainBackgroundColour);
+  background-size: 50px 50px;
+  color: red;
+  width: 50px;
+  height: 50px;
 
 
 
+  I commented out both audio CSS rules, remember to delete these so that they're applied  
+} */
 
 
- 
 
+audio{
+  display: none;
+}
 
