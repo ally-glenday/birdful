@@ -96,9 +96,6 @@ nav img{
     padding: .5%;
 }
 
-/* a[href*="w3schools"]{
-    color: yellow;
-} */
 
 
 /* Targets main homepage SVG image of Kingfisher and river scene */ 
@@ -264,10 +261,12 @@ p ~ ul {
 
 /* Targets bird call element */ 
 
-/* audio{
-    max-width: 50%;
-    margin-top: 10%;
-  } */
+audio{
+    height: 10vh;
+    width: 10vw;
+    border-radius: 5px;
+    color: red;
+  }
 
  /* Creates flexbox container for all bird cards on ID page */ 
 .flex-container{
@@ -359,22 +358,71 @@ html{
   scroll-behavior: smooth;
 }
 
-/* audio{
-  background-image: url("draft_images/bird_call_icon.svg");
-  background-color: var(--mainBackgroundColour);
-  background-size: 50px 50px;
-  color: red;
-  width: 50px;
-  height: 50px;
 
-
-
-  I commented out both audio CSS rules, remember to delete these so that they're applied  
-} */
-
-
-
-audio{
-  display: none;
+audio::-webkit-media-controls-panel{
+  background-color: red;
 }
 
+
+
+
+
+/* -------- have bird icon as (no sound waves) as button background image, then on-click change background image to with sound */ 
+
+
+
+/* The below styles are copied from my CodePen to test if the colour dropdown works okay */ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.main-menu{
+  display: block;
+}
+
+.sub-menu .sub-menu-content{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.sub-menu-content{
+  display: none;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.sub-menu:hover .sub-menu-content {
+  display: block;
+}
