@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/logo_final" href="images/logo_final.svg">
     <title>Bird ID | Birdful</title>
     <link rel="stylesheet" href="styles.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+
+
   </head>
   <header>
 
     <div class="dropdown">
-    <button onclick="toggleDropdown()" class="dropbtn">Search by Colour</button>
+
+      <input type="checkbox" id="toggle-dropdown">
+
+    <!-- <button onclick="toggleDropdown()" class="dropbtn">Search by Colour</button> -->
     <div id="myDropdown" class="dropdown-content">
     <!--     <input type="text" placeholder="Search by colour" id="myInput" onkeyup="filterFunction()"> -->
         <div class="main-menu">
@@ -105,11 +117,10 @@
 
 
     
-    <nav>    
+    <nav id="main-navigation"> 
+      <img id="logo" src="images/logo_with_tex.svg" width="80" height="80" alt="Birdful logo">   
       <img src="images/search-icon-final.svg" width="50" height="50" alt="Search icon, a dark grey magnifiying glass">
       <img src="images/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
-
-  <!-- End of search bar -->
     </nav>
 
     <h1>Find a Bird<span class="small-text">by Habitat</span></h1>
@@ -146,38 +157,61 @@
         
                               
                 <ul>
-                  <li><img src="draft_images/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar">All Year</li>
+                  <li><img src="draft_images/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
+                  <li>All Year</li>
 
-                  <li><img src="draft_images/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree">Gardens, Parks & Forests</li>
+
+                  <li><img src="draft_images/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+                  <li>Gardens, Parks & Forests</li>
+
                   
-                  <li><img src="draft_images/bird_size_icon_v2.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size">Very small <span>(12cm)</span></li>
+                  <li><img src="draft_images/bird_size_icon_v2.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+                  <li>Very small (12cm)</li>
                   
   
 
-                    <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping ">Bird call  <audio controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
+                    <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping "></li>
+                    <li>Bird call  <audio controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
                       Sorry, but it appears your browser does not support the audio element.
                       </audio></li>
                   </ul>
                 </div> <!--Closing list-bird-card div-->
 
                 <div class="list-bird-card">
-            
+          
 
-                  <a href="blue_tit.html"><img src="draft_images/Blue_Tit_1500px.jpg" width="100" height="100" alt="Illustration of a Blue Tit">Blue Tit</a>
-
+                  <a href="blue_tit.html"><img src="draft_images/Blue_Tit_1500px.jpg" width="100" height="100" alt="Illustration of a Blue Tit"><p>Blue Tit</p></a>
+  
+                  <!-- <button onclick="playBirdCall()" type="button">Play Bird Call   <audio id="blue-tit-call" controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
+                    Sorry, but it appears your browser does not support the audio element.
+                    </audio></button>
+                  <button onclick="pauseBirdCall()" type="button">Pause Bird Call</button><br>  -->
+  
                   
+              
+  
+          
+                                
                   <ul>
-                    <li><img src="draft_images/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar">All Year</li>
-
-                    <li><img src="draft_images/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree">Gardens, Parks & Forests</li>
+                    <li><img src="draft_images/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
+                    <li>All Year</li>
+  
+  
+                    <li><img src="draft_images/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+                    <li>Gardens, Parks & Forests</li>
+  
                     
-                    <li><img src="draft_images/bird_size_icon_v2.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size">Very small <span>(12cm)</span></li>
+                    <li><img src="draft_images/bird_size_icon_v2.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+                    <li>Very small (12cm)</li>
                     
-                    <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping ">Bird call  <audio controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
-                      Sorry, but it appears your browser does not support the audio element.
-                      </audio></li>
+    
+  
+                      <li><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="Bird call icon, illustration of a bird chirping "></li>
+                      <li>Bird call  <audio controls><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
+                        Sorry, but it appears your browser does not support the audio element.
+                        </audio></li>
                     </ul>
-                  </div> <!--Closing .list-bird-card div-->
+                  </div> <!--Closing list-bird-card div-->
            </div> <!--Closing flex-container div-->
           
     

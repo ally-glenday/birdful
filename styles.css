@@ -88,13 +88,29 @@ h1{
 }
 
 
-/* Targets search and home menu icons */ 
-nav img{
-    position: relative;
-    left: 69%;
-    margin: 8% 0 5% 0;
-    padding: .5%;
+/* Targets search and home menu icon & sets search icon and home button to right */ 
+#main-navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: #3E3E3E 2px solid;
 }
+
+#main-navigation img{
+  padding: 2%;
+}
+
+/* Sets logo to left hand side of screen */ 
+img#logo{
+  margin-right: auto;
+}
+
+
+
+
+
+
+
 
 
 
@@ -289,7 +305,6 @@ audio{
 .list-bird-card a > img{
   width: 100%; 
   height: auto;
-  border: #a8a8a1 .1px solid;
   border-radius: 5px 5px 0px 0px; 
  
   
@@ -319,8 +334,9 @@ audio{
 /* Targets key icons and sets as grid */
 .list-bird-card ul{
   display: grid;
-  grid-template-columns: 50fr 50fr;
+  grid-template-columns: 10fr 30fr 10fr 30fr;
   font-size: 2vw;
+  margin: 5%;
 }
 
 /* Targets icons */
@@ -397,7 +413,17 @@ audio::-webkit-media-controls-panel{
 
 .dropdown a:hover {background-color: #ddd;}
 
-.show {display: block;}
+/* .show {display: block;} */
+
+#toggle-dropdown{
+  background-image: url("images/search-icon-final.svg");
+}
+
+#toggle-dropdown:checked ~ *{
+  display: block;
+
+}
+
 
 .main-menu{
   display: block;
@@ -417,7 +443,6 @@ audio::-webkit-media-controls-panel{
 
 .sub-menu-content{
   display: none;
-  background-color: red;
   width: 100%;
   z-index: 1;
 }
@@ -425,4 +450,7 @@ audio::-webkit-media-controls-panel{
 
 .sub-menu:hover .sub-menu-content {
   display: block;
+  
 }
+
+
