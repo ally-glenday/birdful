@@ -286,10 +286,8 @@ p ~ ul {
 /* Targets bird call element */ 
 
 #audio-container{
-  height: auto;
-  width: 10em;
-  margin: 0 auto;
-  max-width: 95%;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 audio{
@@ -303,16 +301,20 @@ audio{
   padding: 5%;
    */
 
-   width: 100%;
-   height: 100%;
-   
+   display: block;
+   width: 30vw;
+   height: auto;
+   margin: 0 auto;
+   min-width: 30vw;
+  
   }
 
  /* Creates flexbox container for all bird cards on ID page */ 
 .flex-container{
   display: flex;
-  column-gap: 8%;
+  column-gap: 7.5%;
   margin: 5%;
+  max-width: 100vw;
 }
 
 /* Targets entire bird card */ 
