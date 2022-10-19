@@ -53,6 +53,9 @@ table {
   box-sizing: border-box;
 }
 
+button{
+  all: unset;
+}
 
 /* -------------- End of reset ------------- */ 
 
@@ -284,6 +287,34 @@ p ~ ul {
   
 
 /* Targets bird call element */ 
+
+.play-pause-container{
+  background-color: var(--mainBodyTextColour);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.play-pause-container button{
+  background-color: var(--mainBodyTextColour);
+  width: 100%;
+  border: #3E3E3E solid 5px;
+  align-self: center;
+}
+
+.display-as-paused{
+  background-image: url("images/pause_beige.svg");
+  height: 50%;
+  width: auto;
+  background-size: cover;
+}
+
+.display-as-playing{
+  background-image: url("images/play_beige.svg");
+  height: 50%;
+  width: auto;
+  background-size: cover;
+}
+
+
 
 #audio-container{
   max-width: 100%;

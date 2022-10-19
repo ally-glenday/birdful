@@ -152,29 +152,32 @@
                   <audio id="blue-tit-call"><source src="bird_calls/XC742093 - Eurasian Blue Tit - Cyanistes caeruleus.mp3" type="audio/mpeg">
                     Sorry, but it appears your browser does not support the audio element.
                     </audio>
+                    <div class="play-pause-container">
+                      <button id="play-button" onclick="playCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
+                      <button onclick="pauseCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
+                      </div><!--Closing play / pause buttons div-->
             
 
                   <script>
                   var blueTitCall = document.getElementById("blue-tit-call"); 
+                  var button = document.getElementById("play-button");
 
                   function playCall() { 
                     blueTitCall.play(); 
+                    // button.style.className = "display-as-paused"
+                    button.classList.toggle("display-as-paused");
+                    
+              
+                    // document.getElementById("MyElement").className = "MyClass";
+                    
                   } 
+
+               
 
                   function pauseCall() { 
                     blueTitCall.pause(); 
                   } 
-                  if (blueTitCall.duration > 0 && !blueTitCall.paused){
-
-                  //Its playing...do your job
-                  blueTitCall.style.backgroundColor = "red";
-
-                  } else {
-                    
-                    blueTitCall.style.backgroundColor = "blue";
-                  //Not playing...maybe paused, stopped or never played.
-
-}
+                  
                   </script>
 
                     <!-- JS BUTTONS --------------------->
@@ -195,8 +198,7 @@
                     <li><img src="draft_images/bird_call_icon_v2.svg" alt=""></li>
                       <li><a href="#">More Calls</a></li>
                   </ul>
-                  <button onclick="playCall()" type="button"><img src="draft_images/bird_call_icon_v2.svg" width="25" height="25" alt="">Play</button>
-                  <button onclick="pauseCall()" type="button">Pause</button> 
+        
                 </div> <!--Closing list-bird-card div-->
 
                  
