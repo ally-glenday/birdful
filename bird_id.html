@@ -153,30 +153,25 @@
                     Sorry, but it appears your browser does not support the audio element.
                     </audio>
                     <div class="play-pause-container">
-                      <button id="play-button" onclick="playCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
-                      <button onclick="pauseCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
+                      <button id="play-button" onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
+                      <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
                       </div><!--Closing play / pause buttons div-->
             
 
                   <script>
-                  var blueTitCall = document.getElementById("blue-tit-call"); 
-                  var button = document.getElementById("play-button");
 
-                  function playCall() { 
-                    blueTitCall.play(); 
-                    // button.style.className = "display-as-paused"
-                    button.classList.toggle("display-as-paused");
+                  var blueTitCall = document.getElementById("blue-tit-call");
+
+                  function playBlueTitCall(){
+                    blueTitCall.play();
                     
-              
-                    // document.getElementById("MyElement").className = "MyClass";
-                    
-                  } 
+                  }
 
-               
+                  function pauseBlueTitCall(){
+                    blueTitCall.pause();
+                  }
 
-                  function pauseCall() { 
-                    blueTitCall.pause(); 
-                  } 
+                 
                   
                   </script>
 
@@ -195,7 +190,7 @@
                   <li>Very small (12cm)</li>
                 
                 
-                    <li><img src="draft_images/bird_call_icon_v2.svg" alt=""></li>
+                    <li><img src="draft_images/bird_call_icon_v2.svg" alt="Bird call icon"></li>
                       <li><a href="#">More Calls</a></li>
                   </ul>
         
@@ -228,6 +223,8 @@
                   </ul>
                 </div> <!--Closing list-bird-card div-->
            </div> <!--Closing flex-container div-->
+
+           <a href="great_tit.html">Great Tit</a>
           
     
         </section> <!--Closing gardens_and_parks section-->

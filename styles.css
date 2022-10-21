@@ -226,7 +226,7 @@ p ~ ul {
 
   /* ----- Targets All Bird ID Cards ------- */ 
 
-  /* Entire bird id card div */
+/* Entire bird id card div */
   .bird-id-card {
     width: 90vw;
     height: 90vw;
@@ -236,12 +236,19 @@ p ~ ul {
 
   }
 
-  /* Bird card illustration & bird name container only */
+/* Bird card illustration & bird name container only */
   .bird-picture{
     border: 5px solid #3E3E3E;
     border-radius: 5px; 
     box-shadow: 0px 0px 10px 0px #8a8a8a;
   }
+
+  /* Bird card illustration (makes img 100% of the container */
+  .bird-picture img{
+    width: 100%;
+    height: auto;
+  }
+
 /* Targets bird card name, e.g. Blue Tit */ 
   .bird-id-card h1{
     margin-top: 0;
