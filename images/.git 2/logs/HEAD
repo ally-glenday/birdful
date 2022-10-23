@@ -1,0 +1,28 @@
+0000000000000000000000000000000000000000 03c2008c811c57e751da1efe421d19e56422ef8b Ally Glenday <allyglenday@allys-air.home> 1660748801 +0100	commit (initial): Add all files to start birdful.uk
+03c2008c811c57e751da1efe421d19e56422ef8b 0000000000000000000000000000000000000000 Ally Glenday <allyglenday@allys-air.home> 1660748828 +0100	Branch: renamed refs/heads/main to refs/heads/main
+03c2008c811c57e751da1efe421d19e56422ef8b 03c2008c811c57e751da1efe421d19e56422ef8b Ally Glenday <allyglenday@allys-air.home> 1660748828 +0100	Branch: renamed refs/heads/main to refs/heads/main
+03c2008c811c57e751da1efe421d19e56422ef8b 94dc80598fb70903f8a6b426bb6e95b9b0d6e3d0 Ally Glenday <allyglenday@allys-air.home> 1660848513 +0100	commit: Add revisions to index.html & css
+94dc80598fb70903f8a6b426bb6e95b9b0d6e3d0 79147484ebc0acf06f25e88d227d7ba48f2ac2c3 Ally Glenday <allyglenday@allys-air.home> 1661367829 +0100	commit: Add Blue Tit.html and move images to draft_images
+79147484ebc0acf06f25e88d227d7ba48f2ac2c3 0000000000000000000000000000000000000000 Ally Glenday <allyglenday@allys-air.home> 1661368094 +0100	Branch: renamed refs/heads/main to refs/heads/main
+79147484ebc0acf06f25e88d227d7ba48f2ac2c3 79147484ebc0acf06f25e88d227d7ba48f2ac2c3 Ally Glenday <allyglenday@allys-air.home> 1661368094 +0100	Branch: renamed refs/heads/main to refs/heads/main
+79147484ebc0acf06f25e88d227d7ba48f2ac2c3 bac87e735bbb6723fd0381845dd46eb72e4e65f3 Ally Glenday <allyglenday@allys-air.home> 1661720528 +0100	commit: Update Blue Tit page, add icon toBlue Tit ID card
+bac87e735bbb6723fd0381845dd46eb72e4e65f3 1cbd1689d785c4d38b75859fa1851388bd80223b Ally Glenday <allyglenday@Allys-MacBook-Air.local> 1662114767 +0100	commit: Update Blue Tit.html, adding more content and optimised SVG image
+1cbd1689d785c4d38b75859fa1851388bd80223b 2702b062435752d12e91798b4d368500eeb58daa Ally Glenday <allyglenday@Allys-MacBook-Air.local> 1662465049 +0100	commit: Change audio to make it smaler and add img as jpeg instead of SVG
+2702b062435752d12e91798b4d368500eeb58daa a5057c4b68115f1c2c8f8a54e8e7799a597aa664 Ally Glenday <allyglenday@Allys-MacBook-Air.local> 1662985648 +0100	commit: Add SVGs for Bird ID nav, e.g. Gardens & Parks
+a5057c4b68115f1c2c8f8a54e8e7799a597aa664 49b9c7760c8ea468e4b2a68def550f7da0471c08 Ally Glenday <allyglenday@allys-air.home> 1663322874 +0100	commit: Updated files
+49b9c7760c8ea468e4b2a68def550f7da0471c08 73bbf47b2a958442520c51ee1db918de1f7193c2 ally-glenday <alasair-glenday@hotmail.co.uk> 1663840152 +0100	commit: -m "Begin adding search bar to blue_tit.html"
+73bbf47b2a958442520c51ee1db918de1f7193c2 d3f5f3295cb4f3c2d7c169aa286e6831833f0ab6 ally-glenday <alasair-glenday@hotmail.co.uk> 1664472352 +0100	commit: Update bird card
+d3f5f3295cb4f3c2d7c169aa286e6831833f0ab6 71b346f20f850748d3563ffd8bd3794843231cd0 ally-glenday <alasair-glenday@hotmail.co.uk> 1664709239 +0100	commit: Update ul on bird card
+71b346f20f850748d3563ffd8bd3794843231cd0 21ad6de925a3427f31b55dfe6acd77b652f9be83 ally-glenday <alasair-glenday@hotmail.co.uk> 1664896851 +0100	commit: Added second bird (template only)
+21ad6de925a3427f31b55dfe6acd77b652f9be83 1a919c10be39a5dad6a8cbcecd333d44efff2d74 ally-glenday <alasair-glenday@hotmail.co.uk> 1664896873 +0100	commit: Added second bird
+1a919c10be39a5dad6a8cbcecd333d44efff2d74 229d52b25e40ba63edd1b00d718c6845caad0d63 ally-glenday <alasair-glenday@hotmail.co.uk> 1665228042 +0100	commit: Add main SVG illustrations
+229d52b25e40ba63edd1b00d718c6845caad0d63 3bb2727e6ad3be4171b9eb0daeb89f633b39418c ally-glenday <alasair-glenday@hotmail.co.uk> 1665393233 +0100	commit: Add JS inline for bird call
+3bb2727e6ad3be4171b9eb0daeb89f633b39418c c9a100f14a5dd9086ddbba39f83b19273f73740e ally-glenday <alasair-glenday@hotmail.co.uk> 1665601739 +0100	commit: Add colour search to bird.id
+c9a100f14a5dd9086ddbba39f83b19273f73740e c451ee15fdd4bd12e2a93ddc3cf8c3fe63effb64 ally-glenday <alasair-glenday@hotmail.co.uk> 1665760966 +0100	commit: Add logo, more content
+c451ee15fdd4bd12e2a93ddc3cf8c3fe63effb64 2a996fe3b8392baef05ddd2646166ac72045597f ally-glenday <alasair-glenday@hotmail.co.uk> 1665853179 +0100	commit: Change some styling
+2a996fe3b8392baef05ddd2646166ac72045597f af7f336059391770d3fddd7abb1fbe5097df58ba ally-glenday <alasair-glenday@hotmail.co.uk> 1665937163 +0100	commit: Changing css
+af7f336059391770d3fddd7abb1fbe5097df58ba 036219b65a467678a57da81f9ad22fb6937e0f4d ally-glenday <alasair-glenday@hotmail.co.uk> 1665992599 +0100	commit: Add div to audio call
+036219b65a467678a57da81f9ad22fb6937e0f4d d8d43657e28f7808b3323636791f8f34148d7ab1 ally-glenday <alasair-glenday@hotmail.co.uk> 1666002782 +0100	commit: Re-add JS buttons
+d8d43657e28f7808b3323636791f8f34148d7ab1 1c9c1a644ae255da965927de0430ee541073f6bd ally-glenday <alasair-glenday@hotmail.co.uk> 1666018298 +0100	commit: Add JS button
+1c9c1a644ae255da965927de0430ee541073f6bd 82242768c6ab1357450905cde7772e16bbeea416 ally-glenday <alasair-glenday@hotmail.co.uk> 1666202171 +0100	commit: Small changes
+82242768c6ab1357450905cde7772e16bbeea416 8a25cd013dc57555214b89adc037390dac9e46aa ally-glenday <alasair-glenday@hotmail.co.uk> 1666341570 +0100	commit: JS Bird Call working

@@ -412,12 +412,14 @@ audio{
   gap: 9% 1%;
   font-size: 1em;
   margin: 8% 8%;
+
 }
 
 .list-bird-card li{
   align-self: center;
   margin-left: 20%;
   line-height: 1.2em;
+  text-transform: capitalize;
 }
 
 /* Targets icons */
