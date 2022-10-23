@@ -293,7 +293,7 @@ p ~ ul {
 }
   
 
-/* Targets bird call element */ 
+/* Targets bird call element 
 
 .play-pause-container{
   background-color: var(--mainBodyTextColour);
@@ -319,7 +319,7 @@ p ~ ul {
   height: 50%;
   width: auto;
   background-size: cover;
-}
+} */
 
 
 
@@ -403,6 +403,7 @@ audio{
 
 .list-bird-card a[href="great_tit.html"] > p{
   background-color: rgb(105, 128, 100);
+  background-color: #286B33;
 }
 
 /* Targets key icons and sets as grid */

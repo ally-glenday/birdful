@@ -140,22 +140,24 @@
           <img src="images/main_gardens_final.svg" alt="Simple graphic illustration of a city park, with a cityscape in the background at sunset">
               <div class="flex-container">
                 
-                <audio id="testAudioCall"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
-                  Sorry, but it appears your browser does not support the audio element.
-                  </audio>
-                <input type="checkbox" id="test-call" onclick="testCall()">
+             
 
         <!------------------------------ Blue Tit --------------------------->
                 <div class="list-bird-card">
                   <a href="blue_tit.html"><img src="images/illustrations/blue_tit_500px.jpg" srcset="images/illustrations/blue_tit_500px.jpg 500w, images/illustrations/blue_tit_1000px.jpg 1000w, images/illustrations/blue_tit_1500px.jpg 1500w" sizes="100vw" alt="Blue Tit illustration"><p>Blue Tit</p></a> 
+                  <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()">
+                  <label for="blue-tit-checkbox"></label>
                   <!-- JS BUTTONS ----------------->
-                    <audio id="blue-tit-call"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
-                    Sorry, but it appears your browser does not support the audio element.
-                    </audio>
                     <div class="play-pause-container">
-                      <button onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
-                      <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
+
+                      <audio id="blue-tit-audio"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
+                        Sorry, but it appears your browser does not support the audio element.
+                        </audio>
+                      <audio controls src="bird_calls/blue-tit.mp3">Bird Call</audio>
+                      <!-- <button onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
+                      <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button>  -->
                     </div><!--Closing play / pause buttons div-->
+                  
                     <ul>
                       <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
                       <li>All year</li>
@@ -167,6 +169,7 @@
                       <li><a href="#">More calls</a></li>
                     </ul>
                 </div> <!--Closing list-bird-card div-->
+
                 <!------------------------------ Great Tit --------------------------->
                 <div class="list-bird-card">
                   <a href="great_tit.html"><img src="images/illustrations/great_tit_500px.jpg" srcset="images/illustrations/great_tit_500px.jpg 500w, images/illustrations/great_tit_1000px.jpg 1000w, images/illustrations/great_tit_1500px.jpg 1500w" sizes="100vw" alt="Great Tit illustration"><p>Great Tit</p></a> 
@@ -213,6 +216,30 @@
                     </ul>
           
                 </div> <!--Closing list-bird-card div-->
+
+                       <!------------------------------ Long-Tailed Tit --------------------------->
+                       <div class="list-bird-card">
+                        <a href="long_tailed_tit.html"><img src="images/illustrations/long_tailed_tit_500px.jpg" srcset="images/illustrations/long_tailed_tit_500px.jpg 500w, images/illustrations/long_tailed_tit_1000px.jpg 1000w, images/illustrations/long_tailed_tit_1500px.jpg 1500w" sizes="100vw" alt="Long-Tailed Tit illustration"><p>Long-Tailed Tit</p></a> 
+                        <!-- JS BUTTONS ----------------->
+                        <audio id="blue-tit-call"><source src="bird_calls/blue-tit_1.mp3" type="audio/mpeg">
+                        Sorry, but it appears your browser does not support the audio element.
+                        </audio>
+                          <div class="play-pause-container">
+                            <button id="play-button" onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
+                            <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
+                          </div><!--Closing play / pause buttons div-->
+                          <ul>
+                            <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
+                            <li>All Year</li>
+                            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+                            <li>Gardens & Forests</li>
+                            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+                            <li>Very small (12cm)</li>
+                            <li><img src="images/icons/bird_call_icon.svg" width="25" height="25" alt="Bird call icon"></li>
+                            <li><a href="#">More Calls</a></li>
+                          </ul>
+                
+                      </div> <!--Closing list-bird-card div-->
 
 
 
