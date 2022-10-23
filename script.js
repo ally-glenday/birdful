@@ -7,6 +7,21 @@ function toggleDropdown() {
 
 
 
+  
+  var blueTitCall = document.getElementById("blue-tit-call");
+
+  function playBlueTitCall(){
+    blueTitCall.play();
+    
+  }
+
+  function pauseBlueTitCall(){
+    blueTitCall.pause();
+  }
+  
+
+
+
 
 
 

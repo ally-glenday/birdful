@@ -144,11 +144,11 @@
                 <div class="list-bird-card">
                   <a href="blue_tit.html"><img src="images/illustrations/blue_tit_500px.jpg" srcset="images/illustrations/blue_tit_500px.jpg 500w, images/illustrations/blue_tit_1000px.jpg 1000w, images/illustrations/blue_tit_1500px.jpg 1500w" sizes="100vw" alt="Blue Tit illustration"><p>Blue Tit</p></a> 
                   <!-- JS BUTTONS ----------------->
-                  <audio id="blue-tit-call"><source src="bird_calls/blue-tit_1.mp3" type="audio/mpeg">
+                  <audio id="blue-tit-call"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
                   Sorry, but it appears your browser does not support the audio element.
                   </audio>
                     <div class="play-pause-container">
-                      <button id="play-button" onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
+                      <button onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
                       <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
                     </div><!--Closing play / pause buttons div-->
                     <ul>
@@ -166,12 +166,12 @@
                 <div class="list-bird-card">
                   <a href="great_tit.html"><img src="images/illustrations/great_tit_500px.jpg" srcset="images/illustrations/great_tit_500px.jpg 500w, images/illustrations/great_tit_1000px.jpg 1000w, images/illustrations/great_tit_1500px.jpg 1500w" sizes="100vw" alt="Great Tit illustration"><p>Great Tit</p></a> 
                   <!-- JS BUTTONS ----------------->
-                  <audio id="blue-tit-call"><source src="bird_calls/blue-tit_1.mp3" type="audio/mpeg">
+                  <audio class="bird-call"><source src="bird_calls/blue-tit_1.mp3" type="audio/mpeg">
                   Sorry, but it appears your browser does not support the audio element.
                   </audio>
                     <div class="play-pause-container">
-                      <button id="play-button" onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
-                      <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
+                      <button class="bird-call" onclick="playCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
+                      <button onclick="pauseCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
                     </div><!--Closing play / pause buttons div-->
                     <ul>
                       <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
@@ -299,6 +299,7 @@
 
 
 
+
       <!-- <script> 
         var birdCall = document.getElementById("blue-tit-call"); 
         
@@ -316,20 +317,52 @@
  
       <script>
 
-        var blueTitCall = document.getElementById("blue-tit-call");
+        
+        // const blueTitCall = document.getElementById("blue-tit-call");
 
-        function playBlueTitCall(){
-          blueTitCall.play();
-          
-        }
+        // let birdCall = document.getElementsByClassName("bird-call");
 
-        function pauseBlueTitCall(){
-          blueTitCall.pause();
-        }
+        // const blueTit = {
+        //   name: "Blue Tit",
+        //   call: ("bird_calls/blue-tit_1.mp3")
+        // }
 
+        // function(){
+        //   blueTit.call.play();
+        // }
+
+        // function playCall(birdCall){
+        //   birdCall.play();
+        // }
+
+        // function pauseCall(birdCall){
+        //   birdCall.pause();
+        // }
+
+
+
+
+      
+
+       
        
         
         </script>
+
+
+      
+
+
+        <!-- const person = {
+          firstName: "John",
+          lastName : "Doe",
+          id       : 5566,
+          fullName : function() {
+            return this.firstName + " " + this.lastName;
+
+            var alarm = new Audio('yourAudio.mp3');
+          }
+        }; -->
 
 
 
