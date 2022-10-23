@@ -122,8 +122,8 @@
       <img src="images/icons/search-icon-final.svg" width="50" height="50" alt="Search icon, a dark grey magnifiying glass">
       <img src="images/icons/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
     </nav>
-
-    <h1>Find a Bird<span class="small-text">by Habitat</span></h1>
+  
+      <h1>Find a Bird<span class="small-text">by Habitat</span></h1>
     
       <section class="bird-list">
         <nav>
@@ -139,14 +139,19 @@
           <h2>Gardens & Parks</h2>
           <img src="images/main_gardens_final.svg" alt="Simple graphic illustration of a city park, with a cityscape in the background at sunset">
               <div class="flex-container">
-               
+                
+                <audio id="testAudioCall"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
+                  Sorry, but it appears your browser does not support the audio element.
+                  </audio>
+                <input type="checkbox" id="test-call" onclick="testCall()">
+
         <!------------------------------ Blue Tit --------------------------->
                 <div class="list-bird-card">
                   <a href="blue_tit.html"><img src="images/illustrations/blue_tit_500px.jpg" srcset="images/illustrations/blue_tit_500px.jpg 500w, images/illustrations/blue_tit_1000px.jpg 1000w, images/illustrations/blue_tit_1500px.jpg 1500w" sizes="100vw" alt="Blue Tit illustration"><p>Blue Tit</p></a> 
                   <!-- JS BUTTONS ----------------->
-                  <audio id="blue-tit-call"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
-                  Sorry, but it appears your browser does not support the audio element.
-                  </audio>
+                    <audio id="blue-tit-call"><source src="bird_calls/blue-tit.mp3" type="audio/mpeg">
+                    Sorry, but it appears your browser does not support the audio element.
+                    </audio>
                     <div class="play-pause-container">
                       <button onclick="playBlueTitCall()" type="button"><img src="images/play_beige.svg" width="15" height="15" alt=""></button>
                       <button onclick="pauseBlueTitCall()" type="button"><img src="images/pause_beige.svg" width="15" height="15" alt=""></button> 
@@ -297,7 +302,7 @@
 
       </section> <!--Closing .bird list section-->
 
-
+    
 
 
       <!-- <script> 
