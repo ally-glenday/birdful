@@ -536,3 +536,24 @@ html{
 }
 
 
+
+
+
+
+div.list-bird-card:nth-child(1) > label:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-image: url("images/play_black.svg");
+  background-size: contain;
+  }
+  
+  #blue-tit-checkbox {
+  display: none;
+  }
+
+
+
+{
+    background-image: url("images/pause_black.svg")
+  }
