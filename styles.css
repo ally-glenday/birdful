@@ -424,11 +424,18 @@ audio{
 }
 
 /* Targets icons */
-.list-bird-card ul img{
-  /* height: 4vh;
-  width: 4vw; */
 
+img[src="images/icons/bird_call_icon_new.svg"]{
+  height: 30px;
+  width: 30px;
 }
+
+img[src="images/icons/bird_call_icon_new.svg"]:hover{
+  height: 50px;
+  width: 50px;
+}
+
+
 
 /* Targets id audio */ 
 /* .list-bird-card audio{
