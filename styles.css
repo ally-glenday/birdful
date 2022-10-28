@@ -293,59 +293,7 @@ p ~ ul {
 }
   
 
-/* Targets bird call element 
 
-.play-pause-container{
-  background-color: var(--mainBodyTextColour);
-  display: flex;
-  flex-direction: row-reverse;
-}
-.play-pause-container button{
-  background-color: var(--mainBodyTextColour);
-  width: 100%;
-  border: #3E3E3E solid 5px;
-  align-self: center;
-}
-
-.display-as-paused{
-  background-image: url("images/pause_beige.svg");
-  height: 50%;
-  width: auto;
-  background-size: cover;
-}
-
-.display-as-playing{
-  background-image: url("images/play_beige.svg");
-  height: 50%;
-  width: auto;
-  background-size: cover;
-} */
-
-
-
-#audio-container{
-  max-width: 100%;
-  min-width: 100%;
-}
-
-audio{
-  /* display: block;
-  border-radius: 1em;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  max-width: 100%;
-  min-width: 100%;
-  padding: 5%;
-   */
-
-   display: block;
-   width: 30vw;
-   height: auto;
-   margin: 0 auto;
-   min-width: 30vw;
-  
-  }
 
  /* Creates flexbox container for all bird cards on ID page */ 
 .flex-container{
@@ -377,7 +325,7 @@ audio{
 .list-bird-card a > img{
   width: 100%; 
   height: auto;
-  border-radius: 2vw;
+  border-radius: 1vw;
 }
 
 
@@ -418,9 +366,10 @@ audio{
 
 .list-bird-card li{
   align-self: center;
-  margin-left: 20%;
   line-height: 1.2em;
   text-transform: capitalize;
+  padding: 3%;
+  margin: 4% 0 7% 4%;
 }
 
 /* Targets icons */
@@ -545,22 +494,28 @@ html{
 
 
 
-
-
-div.list-bird-card:nth-child(1) > label:nth-child(3) {
-  width: 100px;
-  height: 100px;
+/* Bird call audio */
+label{
+  width: 35px;
+  height: 35px;
   display: block;
-  background-image: url("images/play_black.svg");
+  background-image: url("images/icons/bird_call_icon_new.svg");
   background-size: contain;
+  background-repeat: no-repeat;
   }
-  
-  #blue-tit-checkbox {
-  display: none;
+  label:focus{
+    height: 100px;
   }
 
 
 
-{
-    background-image: url("images/pause_black.svg")
-  }
+/* Sets all checkboxs so they are not visible on screen, but are still accesible for screenreaders */ 
+input[type=checkbox]{
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+  margin: -.3%;
+  } 
+
+
+

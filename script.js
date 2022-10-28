@@ -26,6 +26,7 @@ const blueTitCheckbox = document.getElementById("blue-tit-checkbox");
 function playBlueTitCall(){
   if(blueTitCheckbox.checked){
     blueTitAudio.play();
+    
   }
   else{
     blueTitAudio.pause();  
@@ -38,6 +39,7 @@ const greatTitCheckbox = document.getElementById("great-tit-checkbox");
 function playGreatTitCall(){
   if(greatTitCheckbox.checked){
     greatTitAudio.play();
+    
   }
   else{
     greatTitAudio.pause();  
