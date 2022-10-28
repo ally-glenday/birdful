@@ -372,6 +372,15 @@ p ~ ul {
   margin: 4% 0 7% 4%;
 }
 
+.list-bird-card li:nth-child(7){
+grid-column: span 2;
+text-align: end;
+}
+
+.list-bird-card input{
+  
+}
+
 /* Targets icons */
 
 img[src="images/icons/bird_call_icon_new.svg"]{
@@ -496,15 +505,17 @@ html{
 
 /* Bird call audio */
 label{
-  width: 35px;
-  height: 35px;
+  width: 100%;
+  height: auto;
   display: block;
-  background-image: url("images/icons/bird_call_icon_new.svg");
+  background-image: url("images/icons/bird_call_icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  
   }
+
   label:focus{
-    height: 100px;
+  
   }
 
 
