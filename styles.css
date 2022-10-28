@@ -357,7 +357,7 @@ p ~ ul {
 /* Targets key icons and sets as grid */
 .list-bird-card ul{
   display: grid;
-  grid-template-columns: 10fr 30fr 10fr 30fr;
+  grid-template-columns: 10fr 40fr 10fr 40fr;
   gap: 9% 1%;
   font-size: 1em;
   margin: 8% 8%;
@@ -374,7 +374,7 @@ p ~ ul {
 
 .list-bird-card li:nth-child(7){
 grid-column: span 2;
-text-align: end;
+text-align: center;
 }
 
 .list-bird-card input{
@@ -528,5 +528,7 @@ input[type=checkbox]{
   margin: -.3%;
   } 
 
-
+span#left-padding{
+  margin-right: 10%;
+}
 
