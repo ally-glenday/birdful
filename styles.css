@@ -68,7 +68,7 @@ body {
   }
 
 /* Setting all headings and paragraphs to dark grey (text colour) */
-h1, h2, h3, h4, h5, h5, h6, p{
+h1, h2, h3, h4, h5, h5, h6, p, label, li{
     color: var(--mainBodyTextColour);
 
 }
@@ -358,10 +358,10 @@ p ~ ul {
 .list-bird-card ul{
   display: grid;
   grid-template-columns: 10fr 40fr 10fr 40fr;
-  gap: 9% 1%;
-  font-size: 1em;
-  margin: 8% 8%;
-
+  gap: 10% 2%;
+  font-size: 5vw;
+  margin: 2% 5% 5% 5%;
+  padding: 2%;
 }
 
 .list-bird-card li{
@@ -532,3 +532,7 @@ span#left-padding{
   margin-right: 10%;
 }
 
+audio{
+  width: 100%;
+  height: auto;
+}
