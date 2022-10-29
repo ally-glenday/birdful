@@ -63,7 +63,7 @@ button{
 body {
     --mainBackgroundColour: #F7EAD9; /* Checked against foreground colour on WebAIM and is accessible */
     --mainBodyTextColour: #4D4D4D;
-    font-family: 'Jost';
+    font-family: 'Jost', 'Futura', 'Trebuchet MS', 'Arial', sans-serif; 
     background-color: var(--mainBackgroundColour);
   }
 
