@@ -1,487 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/logo_final" href="images/logo_final.svg">
-    <title>Bird ID | Birdful</title>
-    <link rel="stylesheet" href="styles.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/logo_final" href="images/logo_final.svg">
+  <title>Bird ID | Birdful</title>
+  <link rel="stylesheet" href="styles.css">
 
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
-  </head>
-  <header>
-    <noscript>JavaScript is disabled. Please turn on JavaScript for full functionality</noscript>
 
-    <div class="dropdown">
+</head>
+<header>
+  <noscript>JavaScript is disabled. Please turn on JavaScript for full functionality</noscript>
 
-      <input type="checkbox" id="toggle-dropdown">
+  <div class="dropdown">
+
+    <input type="checkbox" id="toggle-dropdown">
 
     <!-- <button onclick="toggleDropdown()" class="dropbtn">Search by Colour</button> -->
     <div id="myDropdown" class="dropdown-content">
-    <!--     <input type="text" placeholder="Search by colour" id="myInput" onkeyup="filterFunction()"> -->
-        <div class="main-menu">
+      <!--     <input type="text" placeholder="Search by colour" id="myInput" onkeyup="filterFunction()"> -->
+      <div class="main-menu">
         <div id="colour-block" class="sub-menu">
-            <a href="#">Grey</a>
-            <div class="sub-menu-content">
+          <a href="#">Grey</a>
+          <div class="sub-menu-content">
             <a href="#">Collard Dove</a>
             <a href="#">Wood Pigeon</a>
             <a href="#">Kestrel</a>
             <a href="#">Coal Tit</a>
-            </div> <!--Closing sub menu div--> 
-            
-            
-            
-            
-            <div class="sub-menu">
+          </div>
+          <!--Closing sub menu div-->
+
+
+
+
+          <div class="sub-menu">
             <a href="#about">Blue</a>
             <div class="sub-menu-content">
-                <a href="#base">Blue Tit</a>
-                <a href="#base">Great Tit</a>
-                <a href="#base">Jay</a>
-                <a href="#base">Magpie</a>
-                <a href="#base">Nuthatch</a>
-                <a href="#base">Kingfisher</a>
-            </div> <!--Closing sub menu div--> 
-            
-            <div class="sub-menu">  <!--Opening sub menu div--> 
-            <a href="#about">Green</a>
-            <div class="sub-menu-content">
-            <a href="#base">Ring Necked Parakeet</a>
-            <a href="#base">Greenfinch</a>
-            <a href="#base">Green Woodpecker</a>
-        
-            </div> <!--Closing sub menu div--> 
-            
-            
-                
-            <div class="sub-menu"> <!--Opening sub menu div--> 
-            <a href="#">Black</a>
-            <div class="sub-menu-content">
-            <a href="#base">Blackbird</a>
-            <a href="#base">Crow</a>
-            <a href="#base">Great Spotted Woodpecker</a>
-            <a href="#base">Little Grebe</a>
-            </div> <!--Closing sub menu div--> 
-            
-            <div class="sub-menu"> <!--Opening sub menu div--> 
-            <a href="#">White</a>
-            <div class="sub-menu-content">
-            <a href="#base">Mute Swan</a>
-            <a href="#base">Pied Wagtail</a>
-            <a href="#base">Long Tailed Tit</a>
-            <a href="#base">Little Grebe</a>
-            </div> <!--Closing sub menu div--> 
-            
-            <div class="sub-menu"> <!--Opening sub menu div--> 
-            <a href="#about">Red | Orange</a>
-            <div class="sub-menu-content">
-            <a href="#base">Robin</a>
-            <a href="#base">Chaffinch</a>
-            <a href="#base">Hobby</a>
-            <a href="#base">Moorhen</a>
-            <a href="#base">Goldfinch</a>
-            </div> <!--Closing sub menu div--> 
-                
-            <div class="sub-menu"> <!--Opening sub menu div--> 
-            <a href="#about">Yellow | Gold</a>
-            <div class="sub-menu-content">
-            <a href="#base">Goldcrest</a>
-            <a href="#base">Goldfinch</a>
-            <a href="#base">Blue Tit</a>
-            <a href="#base">Great Tit</a>
-            
-            </div> <!--Closing sub menu div--> 
-                
-            <div class="sub-menu"> <!--Opening sub menu div--> 
-            <a href="#about">Brown</a>
-            <div class="sub-menu-content">
-            <a href="#base">House Sparrow</a>
-            <a href="#base">Tree Sparrow</a>
-            <a href="#base">Wren</a>
-            <a href="#base">Treecreeper</a>
-            </div> <!--Closing sub menu div--> 
-            
-            
-        </div> <!--Closing main menu div--> 
-        </div>
-    </div>
-    </div> <!--Closing '.dropdown' div--> 
+              <a href="#base">Blue Tit</a>
+              <a href="#base">Great Tit</a>
+              <a href="#base">Jay</a>
+              <a href="#base">Magpie</a>
+              <a href="#base">Nuthatch</a>
+              <a href="#base">Kingfisher</a>
+            </div>
+            <!--Closing sub menu div-->
+
+            <div class="sub-menu">
+              <!--Opening sub menu div-->
+              <a href="#about">Green</a>
+              <div class="sub-menu-content">
+                <a href="#base">Ring Necked Parakeet</a>
+                <a href="#base">Greenfinch</a>
+                <a href="#base">Green Woodpecker</a>
+
+              </div>
+              <!--Closing sub menu div-->
+
+
+
+              <div class="sub-menu">
+                <!--Opening sub menu div-->
+                <a href="#">Black</a>
+                <div class="sub-menu-content">
+                  <a href="#base">Blackbird</a>
+                  <a href="#base">Crow</a>
+                  <a href="#base">Great Spotted Woodpecker</a>
+                  <a href="#base">Little Grebe</a>
+                </div>
+                <!--Closing sub menu div-->
+
+                <div class="sub-menu">
+                  <!--Opening sub menu div-->
+                  <a href="#">White</a>
+                  <div class="sub-menu-content">
+                    <a href="#base">Mute Swan</a>
+                    <a href="#base">Pied Wagtail</a>
+                    <a href="#base">Long Tailed Tit</a>
+                    <a href="#base">Little Grebe</a>
+                  </div>
+                  <!--Closing sub menu div-->
+
+                  <div class="sub-menu">
+                    <!--Opening sub menu div-->
+                    <a href="#about">Red | Orange</a>
+                    <div class="sub-menu-content">
+                      <a href="#base">Robin</a>
+                      <a href="#base">Chaffinch</a>
+                      <a href="#base">Hobby</a>
+                      <a href="#base">Moorhen</a>
+                      <a href="#base">Goldfinch</a>
+                    </div>
+                    <!--Closing sub menu div-->
+
+                    <div class="sub-menu">
+                      <!--Opening sub menu div-->
+                      <a href="#about">Yellow | Gold</a>
+                      <div class="sub-menu-content">
+                        <a href="#base">Goldcrest</a>
+                        <a href="#base">Goldfinch</a>
+                        <a href="#base">Blue Tit</a>
+                        <a href="#base">Great Tit</a>
+
+                      </div>
+                      <!--Closing sub menu div-->
+
+                      <div class="sub-menu">
+                        <!--Opening sub menu div-->
+                        <a href="#about">Brown</a>
+                        <div class="sub-menu-content">
+                          <a href="#base">House Sparrow</a>
+                          <a href="#base">Tree Sparrow</a>
+                          <a href="#base">Wren</a>
+                          <a href="#base">Treecreeper</a>
+                        </div>
+                        <!--Closing sub menu div-->
+
+
+                      </div>
+                      <!--Closing main menu div-->
+                    </div>
+                  </div>
+                </div>
+                <!--Closing '.dropdown' div-->
 </header>
-  <body>
+
+<body>
 
 
-    
-    <nav id="main-navigation"> 
-     <a href="index.html" id="logo"><img src="images/logo_with_text(3).svg" width="80" height="80" alt="Birdful logo"></a>
-      <img src="images/icons/search-icon-final.svg" width="50" height="50" alt="Search icon, a dark grey magnifiying glass">
-      <img src="images/icons/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
+
+  <nav id="main-navigation">
+    <a href="index.html" id="logo"><img src="images/logo_with_text(3).svg" width="80" height="80"
+        alt="Birdful logo"></a>
+    <img src="images/icons/search-icon-final.svg" width="50" height="50"
+      alt="Search icon, a dark grey magnifiying glass">
+    <img src="images/icons/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
+  </nav>
+
+  <h1>Find a Bird<span class="small-text">by Habitat</span></h1>
+
+  <section class="bird-list">
+    <nav>
+      <ul>
+        <li><a href="#gardens_and_parks">Gardens & Parks</a></li>
+        <li><a href="#forests_and_woodlands">Forest & Woodlands</a></li>
+        <li><a href="#ponds_and_water">Ponds & Water</a></li>
+      </ul>
     </nav>
-  
-      <h1>Find a Bird<span class="small-text">by Habitat</span></h1>
-    
-      <section class="bird-list">
-        <nav>
-          <ul>
-            <li><a href="#gardens_and_parks">Gardens & Parks</a></li>
-            <li><a href="#forests_and_woodlands">Forest & Woodlands</a></li>
-            <li><a href="#ponds_and_water">Ponds & Water</a></li>
-          </ul>
-        </nav>
-        
-        <section id="gardens_and_parks"><!------------------------------ Forest & Woodlands section --------------------------->
-          <h2>Gardens & Parks</h2>
-          <img src="images/main_gardens_final.svg" alt="Simple graphic illustration of a city park, with a cityscape in the background at sunset">
-              <div class="flex-container">
-                
-             
+
+    <section id="gardens_and_parks">
+      <!------------------------------ Forest & Woodlands section --------------------------->
+      <h2>Gardens & Parks</h2>
+      <img src="images/main_gardens_final.svg"
+        alt="Simple graphic illustration of a city park, with a cityscape in the background at sunset">
+      <div class="flex-container">
+
+
 
         <!------------------------------ Blue Tit --------------------------->
-                <div class="list-bird-card">
-                  <a href="blue_tit.html"><img src="images/illustrations/blue_tit_500px-min.jpg" srcset="images/illustrations/blue_tit_500px-min.jpg 500w, images/illustrations/blue_tit_1000px-min.jpg 1000w, images/illustrations/blue_tit_1500px-min.jpg 1500w" sizes="100vw" alt="Blue Tit illustration"><p>Blue Tit</p></a> 
-                  <!-- <audio controls src="bird_calls/blue_tit.mp3">Play call</audio> --> <!--JavaScript fallback if disabled-->
-                  
-                    <ul>
-                      <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                      <li>All year</li>
-                      <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                      <li>Gardens & forests</li>
-                      <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                      <li>Very small (12cm)</li>
-                      <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-        
-                      <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                        Sorry, but it appears your browser does not support the audio element.
-                      </audio>
-
-                    </ul>
-                </div> <!--Closing list-bird-card div-->
-
-                <!------------------------------ Great Tit --------------------------->
-                <div class="list-bird-card">
-                  <a href="great_tit.html"><img src="images/illustrations/great_tit_500px-min.jpg" srcset="images/illustrations/great_tit_500px-min.jpg 500w, images/illustrations/great_tit_1000px-min.jpg 1000w, images/illustrations/great_tit_1500px-min.jpg 1500w" sizes="100vw" alt="Great Tit illustration"><p>Great Tit</p></a> 
-                  <ul>
-                    <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                    <li>All year</li>
-                    <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                    <li>Gardens & forests</li>
-                    <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                    <li>Very small (12cm)</li>
-                    <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-      
-                    <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                      Sorry, but it appears your browser does not support the audio element.
-                    </audio>
-
-                  </ul>
-          
-                </div> <!--Closing list-bird-card div-->
-
-
-
-
-                 <!------------------------------ Coal Tit --------------------------->
-                <div class="list-bird-card">
-                  <a href="coal_tit.html"><img src="images/illustrations/coal_tit_500px-min.jpg" srcset="images/illustrations/coal_tit_500px-min.jpg 500w, images/illustrations/coal_tit_1000px-min.jpg 1000w, images/illustrations/coal_tit_1500px-min.jpg 1500w" sizes="100vw" alt="Coal Tit illustration"><p>Coal Tit</p></a> 
-                  <ul>
-                    <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                    <li>All year</li>
-                    <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                    <li>Gardens & forests</li>
-                    <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                    <li>Very small (12cm)</li>
-                    <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-      
-                    <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                      Sorry, but it appears your browser does not support the audio element.
-                    </audio>
-
-                  </ul>
-          
-                </div> <!--Closing list-bird-card div-->
-
-
-
-                       <!------------------------------ Long-Tailed Tit --------------------------->
-                       <div class="list-bird-card">
-                        <a href="long_tailed_tit.html"><img src="images/illustrations/long_tailed_tit_500px-min.jpg" srcset="images/illustrations/long_tailed_tit_500px-min.jpg 500w, images/illustrations/long_tailed_tit_1000px-min.jpg 1000w, images/illustrations/long_tailed_tit_1500px-min.jpg 1500w" sizes="100vw" alt="Long-Tailed Tit illustration"><p>Long-Tailed Tit</p></a> 
-                        <ul>
-                          <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                          <li>All year</li>
-                          <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                          <li>Gardens & forests</li>
-                          <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                          <li>Very small (12cm)</li>
-                          <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-            
-                          <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                            Sorry, but it appears your browser does not support the audio element.
-                          </audio>
-      
-                        </ul>
-                
-                      </div> <!--Closing list-bird-card div-->
-
-                        <!------------------------------ House Sparrow --------------------------->
-                        <div class="list-bird-card">
-                          <a href="house_sparrow.html"><img src="images/illustrations/house_sparrow_500px-min.jpg" srcset="images/illustrations/house_sparrow_500px-min.jpg 500w, images/illustrations/house_sparrow_1000px-min.jpg 1000w, images/illustrations/house_sparrow_1500px-min.jpg 1500w" sizes="100vw" alt="House Sparrow illustration"><p>House Sparrow</p></a> 
-                          <ul>
-                            <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                            <li>All year</li>
-                            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                            <li>Gardens & forests</li>
-                            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                            <li>Very small (12cm)</li>
-                            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-              
-                            <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                              Sorry, but it appears your browser does not support the audio element.
-                            </audio>
-        
-                          </ul>
-                  
-                        </div> <!--Closing list-bird-card div-->
+        <div class="list-bird-card">
+          <a href="blue_tit.html"><img src="images/illustrations/blue_tit_500px-min.jpg"
+              srcset="images/illustrations/blue_tit_500px-min.jpg 500w, images/illustrations/blue_tit_1000px-min.jpg 1000w, images/illustrations/blue_tit_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Blue Tit illustration">
+            <p>Blue Tit</p>
+          </a>
+          <!-- <audio controls src="bird_calls/blue_tit.mp3">Play call</audio> -->
+          <!--JavaScript fallback if disabled-->
+
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+        </div>
+        <!--Closing list-bird-card div-->
+
+        <!------------------------------ Great Tit --------------------------->
+        <div class="list-bird-card">
+          <a href="great_tit.html"><img src="images/illustrations/great_tit_500px-min.jpg"
+              srcset="images/illustrations/great_tit_500px-min.jpg 500w, images/illustrations/great_tit_1000px-min.jpg 1000w, images/illustrations/great_tit_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Great Tit illustration">
+            <p>Great Tit</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+
+
+
+        <!------------------------------ Coal Tit --------------------------->
+        <div class="list-bird-card">
+          <a href="coal_tit.html"><img src="images/illustrations/coal_tit_500px-min.jpg"
+              srcset="images/illustrations/coal_tit_500px-min.jpg 500w, images/illustrations/coal_tit_1000px-min.jpg 1000w, images/illustrations/coal_tit_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Coal Tit illustration">
+            <p>Coal Tit</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+
+
+        <!------------------------------ Long-Tailed Tit --------------------------->
+        <div class="list-bird-card">
+          <a href="long_tailed_tit.html"><img src="images/illustrations/long_tailed_tit_500px-min.jpg"
+              srcset="images/illustrations/long_tailed_tit_500px-min.jpg 500w, images/illustrations/long_tailed_tit_1000px-min.jpg 1000w, images/illustrations/long_tailed_tit_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Long-Tailed Tit illustration">
+            <p>Long-Tailed Tit</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+        <!------------------------------ House Sparrow --------------------------->
+        <div class="list-bird-card">
+          <a href="house_sparrow.html"><img src="images/illustrations/house_sparrow_500px-min.jpg"
+              srcset="images/illustrations/house_sparrow_500px-min.jpg 500w, images/illustrations/house_sparrow_1000px-min.jpg 1000w, images/illustrations/house_sparrow_1500px-min.jpg 1500w"
+              sizes="100vw" alt="House Sparrow illustration">
+            <p>House Sparrow</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+
+        <!------------------------------ Tree Sparrow --------------------------->
+        <div class="list-bird-card">
+          <a href="tree_sparrow.html"><img src="images/illustrations/tree_sparrow_500px-min.jpg"
+              srcset="images/illustrations/tree_sparrow_500px-min.jpg 500w, images/illustrations/tree_sparrow_1000px-min.jpg 1000w, images/illustrations/tree_sparrow_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Tree Sparrow illustration">
+            <p>Tree Sparrow</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
 
-
-                         <!------------------------------ Tree Sparrow --------------------------->
-                         <div class="list-bird-card">
-                          <a href="tree_sparrow.html"><img src="images/illustrations/tree_sparrow_500px-min.jpg" srcset="images/illustrations/tree_sparrow_500px-min.jpg 500w, images/illustrations/tree_sparrow_1000px-min.jpg 1000w, images/illustrations/tree_sparrow_1500px-min.jpg 1500w" sizes="100vw" alt="Tree Sparrow illustration"><p>Tree Sparrow</p></a> 
-                          <ul>
-                            <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                            <li>All year</li>
-                            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                            <li>Gardens & forests</li>
-                            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                            <li>Very small (12cm)</li>
-                            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-              
-                            <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                              Sorry, but it appears your browser does not support the audio element.
-                            </audio>
-        
-                          </ul>
-                  
-                        </div> <!--Closing list-bird-card div-->
-
-                            <!------------------------------ Robin --------------------------->
-                            <div class="list-bird-card">
-                            <a href="robin.html"><img src="images/illustrations/robin_500px-min.jpg" srcset="images/illustrations/robin_500px-min.jpg 500w, images/illustrations/robin_1000px-min.jpg 1000w, images/illustrations/robin_1500px-min.jpg 1500w" sizes="100vw" alt="Robin illustration"><p>Robin</p></a> 
-                            <ul>
-                              <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                              <li>All year</li>
-                              <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                              <li>Gardens & forests</li>
-                              <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                              <li>Very small (12cm)</li>
-                              <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-                
-                              <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                                Sorry, but it appears your browser does not support the audio element.
-                              </audio>
-          
-                            </ul>
-                    
-                          </div> <!--Closing list-bird-card div-->
-
-                            <!------------------------------ Goldfinch --------------------------->
-                            <div class="list-bird-card">
-                            <a href="goldfinch.html"><img src="images/illustrations/goldfinch_500px-min.jpg" srcset="images/illustrations/goldfinch_500px-min.jpg 500w, images/illustrations/goldfinch_1000px-min.jpg 1000w, images/illustrations/goldfinch_1500px-min.jpg 1500w" sizes="100vw" alt="Goldfinch illustration"><p>Goldfinch</p></a> 
-                            <ul>
-                              <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                              <li>All year</li>
-                              <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                              <li>Gardens & forests</li>
-                              <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                              <li>Very small (12cm)</li>
-                              <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-                
-                              <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                                Sorry, but it appears your browser does not support the audio element.
-                              </audio>
-          
-                            </ul>
-                    
-                          </div> <!--Closing list-bird-card div-->
-
-
-                      
-
-                        
-
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="list-bird-card">
-          
-
-            
-            
-
-                 
-                
-            </div> <!--Closing flex-container div---------------------------------->          
-    
-        </section> <!--Closing gardens_and_parks section-->
-
-        <section id="forests_and_woodlands">  <!------------------------------ Forest & Woodlands section --------------------------->
-          <img src="images/main_woodlands_final.svg" alt="Simple graphic illustration of woodland trees at sunset">
-          <h2>Forests & Woodlands</h2>
-        </section> <!--Closing forests_and_woodlands section-->
-
-        <div class="flex-container">
-
-       
-
-
-
-              <!------------------------------ Great Spotted Woodpecker --------------------------->
-              <div class="list-bird-card">
-              <a href="great_spotted_woodpecker.html"><img src="images/illustrations/great_spotted_woodpecker_500px-min.jpg" srcset="images/illustrations/great_spotted_woodpecker_500px-min.jpg 500w, images/illustrations/great_spotted_woodpecker_1000px-min.jpg 1000w, images/illustrations/great_spotted_woodpecker_1500px-min.jpg 1500w" sizes="100vw" alt="Great Spotted Woodpecker illustration"><p>Great Spotted Woodpecker</p></a> 
-              <ul>
-                <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                <li>All year</li>
-                <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                <li>Gardens & forests</li>
-                <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                <li>Very small (12cm)</li>
-                <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-  
-                <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                  Sorry, but it appears your browser does not support the audio element.
-                </audio>
-
-              </ul>
-      
-            </div> <!--Closing list-bird-card div-->
-
-          </div><!--Closing flex-container div---------------------------------->  
-
-        <section id="ponds_and_water">     <!------------------------------ Ponds & Water section --------------------------->
-          <img src="images/main_ponds_final.svg" alt="Simple graphic illustration of a pond with a lily pad and reeds at sunset">
-          <h2>Ponds & Water</h2>
-        
-          <div class="flex-container">
-
-                  <!------------------------------ Mallard --------------------------->
-                  <div class="list-bird-card">
-                    <a href="mallard.html"><img src="images/illustrations/mallard_500px-min.jpg" srcset="images/illustrations/mallard_500px-min.jpg 500w, images/illustrations/mallard_1000px-min.jpg 1000w, images/illustrations/mallard_1500px-min.jpg 1500w" sizes="100vw" alt="Mallard illustration"><p>Mallard</p></a> 
-                    <ul>
-                      <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                      <li>All year</li>
-                      <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                      <li>Gardens & forests</li>
-                      <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                      <li>Very small (12cm)</li>
-                      <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-
-                      <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                        Sorry, but it appears your browser does not support the audio element.
-                      </audio>
-
-                    </ul>
-
-                  </div> <!--Closing list-bird-card div-->
-
-                                <!------------------------------ Mute Swan --------------------------->
-                                <div class="list-bird-card">
-                                  <a href="mute_swan.html"><img src="images/illustrations/mute_swan_500px-min.jpg" srcset="images/illustrations/mute_swan_500px-min.jpg 500w, images/illustrations/mute_swan_1000px-min.jpg 1000w, images/illustrations/mute_swan_1500px-min.jpg 1500w" sizes="100vw" alt="Mute Swan illustration"><p>Mute Swan</p></a> 
-                                  <ul>
-                                    <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                                    <li>All year</li>
-                                    <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                                    <li>Gardens & forests</li>
-                                    <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                                    <li>Very small (12cm)</li>
-                                    <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-              
-                                    <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                                      Sorry, but it appears your browser does not support the audio element.
-                                    </audio>
-              
-                                  </ul>
-              
-                                </div> <!--Closing list-bird-card div-->
-
-
-
-
-                  <!------------------------------ Great Crested Grebe --------------------------->
-                  <div class="list-bird-card">
-                    <a href="great_crested_grebe.html"><img src="images/illustrations/great_crested_grebe_500px-min.jpg" srcset="images/illustrations/great_crested_grebe_500px-min.jpg 500w, images/illustrations/great_crested_grebe_1000px-min.jpg 1000w, images/illustrations/great_crested_grebe_1500px-min.jpg 1500w" sizes="100vw" alt="Great Crested Grebe illustration"><p>Great Crested Grebe</p></a> 
-                    <ul>
-                      <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                      <li>All year</li>
-                      <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                      <li>Gardens & forests</li>
-                      <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                      <li>Very small (12cm)</li>
-                      <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-        
-                      <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                        Sorry, but it appears your browser does not support the audio element.
-                      </audio>
-  
-                    </ul>
-            
-                  </div> <!--Closing list-bird-card div-->
-
-                   <!------------------------------ Little Grebe --------------------------->
-                   <div class="list-bird-card">
-                    <a href="little_grebe.html"><img src="images/illustrations/little_grebe_500px-min.jpg" srcset="images/illustrations/little_grebe_500px-min.jpg 500w, images/illustrations/little_grebe_1000px-min.jpg 1000w, images/illustrations/little_grebe_1500px-min.jpg 1500w" sizes="100vw" alt="Little Grebe illustration"><p>Little Grebe</p></a> 
-                    <ul>
-                      <li><img src="images/icons/calendar.svg" width="25" height="25" alt="Calendar icon, illustration of a calendar"></li>
-                      <li>All year</li>
-                      <li><img src="images/icons/woodlands_icon.svg" width="25" height="25" alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-                      <li>Gardens & forests</li>
-                      <li><img src="images/icons/bird_size_icon.svg" width="25" height="25" alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                      <li>Very small (12cm)</li>
-                      <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li> 
-        
-                      <audio id="blue-tit-audio"><source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-                        Sorry, but it appears your browser does not support the audio element.
-                      </audio>
-  
-                    </ul>
-            
-                  </div> <!--Closing list-bird-card div-->
-
-
-
-
-
-
-
-                
-          </div><!--Closing flex-container div---------------------------------->  
-
-        </section>  <!--Closing ponds_and_water section-->
-
-
-
-
-      </section> <!--Closing .bird list section-->
-
-    
-
-
-
-	  <script src="script.js"></script>
-  </body>
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+        <!------------------------------ Robin --------------------------->
+        <div class="list-bird-card">
+          <a href="robin.html"><img src="images/illustrations/robin_500px-min.jpg"
+              srcset="images/illustrations/robin_500px-min.jpg 500w, images/illustrations/robin_1000px-min.jpg 1000w, images/illustrations/robin_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Robin illustration">
+            <p>Robin</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+        <!------------------------------ Goldfinch --------------------------->
+        <div class="list-bird-card">
+          <a href="goldfinch.html"><img src="images/illustrations/goldfinch_500px-min.jpg"
+              srcset="images/illustrations/goldfinch_500px-min.jpg 500w, images/illustrations/goldfinch_1000px-min.jpg 1000w, images/illustrations/goldfinch_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Goldfinch illustration">
+            <p>Goldfinch</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="list-bird-card">
+
+
+
+
+
+
+
+        </div>
+        <!--Closing flex-container div---------------------------------->
+
+    </section>
+    <!--Closing gardens_and_parks section-->
+
+    <section id="forests_and_woodlands">
+      <!------------------------------ Forest & Woodlands section --------------------------->
+      <img src="images/main_woodlands_final.svg" alt="Simple graphic illustration of woodland trees at sunset">
+      <h2>Forests & Woodlands</h2>
+    </section>
+    <!--Closing forests_and_woodlands section-->
+
+    <div class="flex-container">
+
+
+
+
+
+      <!------------------------------ Great Spotted Woodpecker --------------------------->
+      <div class="list-bird-card">
+        <a href="great_spotted_woodpecker.html"><img src="images/illustrations/great_spotted_woodpecker_500px-min.jpg"
+            srcset="images/illustrations/great_spotted_woodpecker_500px-min.jpg 500w, images/illustrations/great_spotted_woodpecker_1000px-min.jpg 1000w, images/illustrations/great_spotted_woodpecker_1500px-min.jpg 1500w"
+            sizes="100vw" alt="Great Spotted Woodpecker illustration">
+          <p>Great Spotted Woodpecker</p>
+        </a>
+        <ul>
+          <li><img src="images/icons/calendar.svg" width="25" height="25"
+              alt="Calendar icon, illustration of a calendar"></li>
+          <li>All year</li>
+          <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+              alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+          <li>Gardens & forests</li>
+          <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+              alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+          <li>Very small (12cm)</li>
+          <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+          <audio id="blue-tit-audio">
+            <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+            Sorry, but it appears your browser does not support the audio element.
+          </audio>
+
+        </ul>
+
+      </div>
+      <!--Closing list-bird-card div-->
+
+    </div>
+    <!--Closing flex-container div---------------------------------->
+
+    <section id="ponds_and_water">
+      <!------------------------------ Ponds & Water section --------------------------->
+      <img src="images/main_ponds_final.svg"
+        alt="Simple graphic illustration of a pond with a lily pad and reeds at sunset">
+      <h2>Ponds & Water</h2>
+
+      <div class="flex-container">
+
+        <!------------------------------ Mallard --------------------------->
+        <div class="list-bird-card">
+          <a href="mallard.html"><img src="images/illustrations/mallard_500px-min.jpg"
+              srcset="images/illustrations/mallard_500px-min.jpg 500w, images/illustrations/mallard_1000px-min.jpg 1000w, images/illustrations/mallard_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Mallard illustration">
+            <p>Mallard</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+        <!------------------------------ Mute Swan --------------------------->
+        <div class="list-bird-card">
+          <a href="mute_swan.html"><img src="images/illustrations/mute_swan_500px-min.jpg"
+              srcset="images/illustrations/mute_swan_500px-min.jpg 500w, images/illustrations/mute_swan_1000px-min.jpg 1000w, images/illustrations/mute_swan_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Mute Swan illustration">
+            <p>Mute Swan</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+
+
+
+
+        <!------------------------------ Great Crested Grebe --------------------------->
+        <div class="list-bird-card">
+          <a href="great_crested_grebe.html"><img src="images/illustrations/great_crested_grebe_500px-min.jpg"
+              srcset="images/illustrations/great_crested_grebe_500px-min.jpg 500w, images/illustrations/great_crested_grebe_1000px-min.jpg 1000w, images/illustrations/great_crested_grebe_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Great Crested Grebe illustration">
+            <p>Great Crested Grebe</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+        <!------------------------------ Little Grebe --------------------------->
+        <div class="list-bird-card">
+          <a href="little_grebe.html"><img src="images/illustrations/little_grebe_500px-min.jpg"
+              srcset="images/illustrations/little_grebe_500px-min.jpg 500w, images/illustrations/little_grebe_1000px-min.jpg 1000w, images/illustrations/little_grebe_1500px-min.jpg 1500w"
+              sizes="100vw" alt="Little Grebe illustration">
+            <p>Little Grebe</p>
+          </a>
+          <ul>
+            <li><img src="images/icons/calendar.svg" width="25" height="25"
+                alt="Calendar icon, illustration of a calendar"></li>
+            <li>All year</li>
+            <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+                alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+            <li>Gardens & forests</li>
+            <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+                alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Very small (12cm)</li>
+            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+
+            <audio id="blue-tit-audio">
+              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+          </ul>
+
+        </div>
+        <!--Closing list-bird-card div-->
+
+
+
+
+
+
+
+
+      </div>
+      <!--Closing flex-container div---------------------------------->
+
+    </section>
+    <!--Closing ponds_and_water section-->
+
+
+
+
+  </section>
+  <!--Closing .bird list section-->
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
 </html>
