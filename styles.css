@@ -180,12 +180,33 @@ p ~ ul {
 
 /* ------------------------------  BIRD ID PAGE ---------------------------------------------- */ 
 
+h1:not(#main-page-heading){
+  font-size: 8vw;
+}
+
 /* ----- Bird ID List Page h2  ------- */ 
 .bird-list h2{
-    font-size: 6vw;
+    font-size: 12vw;
     font-weight: 700;
     text-align: center;
+    position: relative;
+    bottom: 1.2em;
+  
   }
+.scroll-container{
+  position: relative;
+}
+
+
+
+
+  /* Targets bird id h2 (gardens and parks) */ 
+/* #gardens_and_parks h2, #forests_and_woodlands h2, #ponds_and_water h2{
+  font-size: 8vw;
+  margin: 0 auto;
+  max-width: 80vw;
+  
+} */
 
 /* ----- Targets Bird List ul (Gardens, Forests etc) ------- */ 
 .bird-list ul{
@@ -194,6 +215,31 @@ p ~ ul {
       max-width: 90%;
       margin: 0 auto;
   }
+
+
+
+
+/* .habitat-grid-wrapper{
+  display: grid;
+  
+} */
+
+/* .habitat-grid-wrapper > *{
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+} */
+
+/* .habitat-grid-items{
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.habitat-grid-items img{
+  z-index: -1;
+} */
+
+
+
 
 /* ----- Bird ID List Page background images  ------- */ 
 .bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
@@ -214,6 +260,7 @@ p ~ ul {
 
 .bird-list a[href="#gardens_and_parks"]{
   background-image: url("draft_images/habitat_gardens.svg");
+  
 }
 
 .bird-list a[href="#forests_and_woodlands"]{
@@ -225,6 +272,8 @@ p ~ ul {
 } 
 
   /* ----- Targets All Bird ID Cards ------- */ 
+
+
 
 /* Entire bird id card div */
   .bird-id-card {
@@ -288,11 +337,11 @@ p ~ ul {
     
   }
   
-  img[src="draft_images/calendar.svg"], img[src="draft_images/woodlands_icon.svg"], img[src="draft_images/bird_size_icon_v2.svg"], img[src="draft_images/bird_call_icon_v2.svg"]{
+  /* img[src="draft_images/calendar.svg"], img[src="draft_images/woodlands_icon.svg"], img[src="draft_images/bird_size_icon_v2.svg"], img[src="draft_images/bird_call_icon_v2.svg"]{
   
-    /* background-color: red; */
+    
     margin: 0 5%;
-}
+} */
   
 
 
@@ -404,18 +453,8 @@ img[src="images/icons/bird_call_icon_new.svg"]:hover{
 } */
 
 
-#gardens_and_parks, #forests_and_woodlands, #ponds_and_water{
-
-}
 
 
-/* Targets bird id h2 (gardens and parks) */ 
-#gardens_and_parks h2, #forests_and_woodlands h2, #ponds_and_water h2{
-  font-size: 8vw;
-  margin: 0 auto;
-  max-width: 80vw;
-  
-}
 
 /* Sets all main SVGs (gardens, woodlands, ponds) so they take up full width of the screen */ 
 img[src="images/main_gardens_final.svg"], [src="images/main_woodlands_final.svg"], [src="images/main_ponds_final.svg"], img[src="images/nature-scene.svg"]{
@@ -522,8 +561,8 @@ label{
 
 
 
-/* Sets all checkboxs so they are not visible on screen, but are still accesible for screenreaders */ 
-input[type=checkbox]{
+/* Sets all bird card checkboxes so they are not visible on screen, but are still accesible for screenreaders to play/ pause with one click */ 
+.list-bird-card input[type=checkbox]{
   width: 0px;
   height: 0px;
   visibility: hidden;
@@ -537,4 +576,4 @@ span#left-padding{
 audio{
   width: 100%;
   height: auto;
-}
+} 
