@@ -63,6 +63,7 @@ button{
 body {
     --mainBackgroundColour: #F7EAD9; /* Checked against foreground colour on WebAIM and is accessible */
     --mainBodyTextColour: #4D4D4D;
+    --darkGreyIconColour: #2E2E2E;
     font-family: 'Jost', 'Futura', 'Trebuchet MS', 'Arial', sans-serif; 
     background-color: var(--mainBackgroundColour);
   }
@@ -246,14 +247,16 @@ h1{
     width: 85vw;
     height: auto;
     margin: 0 auto;
-  
 
   }
 
 /* Bird card illustration & bird name container only */
   .bird-picture{
-    border: 2vw #cfcfc8 solid;
+    /* border: 2.5vw #cfcfc8 solid; */
     border-radius: 4vw;
+    max-width: 82vw;
+    margin: 0 auto;
+    /* box-shadow: 0 8px 6px -2px black; */
     
   
   }
@@ -267,41 +270,52 @@ h1{
   }
 
 /* Bird card title (on specific bird page, e.g. blue_tit.html)  */
-.bird-picture h1{
+/* .bird-picture h1{
   font-size: 10vw;
-}
+} */
 
 
 /* Bird card icons (e.g. blue_tit.html)  */
 .bird-id-card ul{
   border-radius: 1em;
-  background-color: #e1ece1;
-  border: .5em solid lightgray;
+  background-color: #e7f1f28a;
+  border: .4em solid lightgray;
   padding: 5%;
+  margin: 5% 0;
 }
 /* Targets 'Description' and 'Spotting Tip' (e.g. blue_tit.html)  */
 .bird-id-card h2{
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600;
   padding: 2%;
   margin-top: 10%;
+  display: inline;
+  color: var(--darkGreyIconColour);
+}
+
+img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
+  margin: 0 2%;
+  margin-top: 15%;
+  
 }
 
 /* Targets bird card name, e.g. Blue Tit */ 
   .bird-id-card h1{
     margin-top: -1%;
-    padding: 3% 0;
+    padding: 5%;
     background-color: #3E3E3E;
     color: white;
     width: 100%;
     font-weight: 500;
-    font-size: 12vw;
+    font-size: 10vw;
     letter-spacing: 2px;
+    border-radius: 0 0 1.5vw 1.5vw;
   }
 /* Targets bird card paragraphs, top and bottom */ 
   .bird-id-card p{
     padding: 5% 3%;
     line-height: 1.2;
+    font-size: 1.1em;
   }
 
 /* Displays ul as grid (bird key info) */
@@ -575,6 +589,7 @@ audio{
 
 footer{
 width: 100vw;
+margin-top: 15%;
   
 }
 
@@ -585,8 +600,13 @@ footer li{
   padding: 2%;
 }
 
-footer ~ a, footer a:visited{
+footer a:link, footer a:visited, footer a:active{
   text-decoration: none;
+  color: rgb(231, 231, 231);
+}
+
+footer a:hover{
+  text-decoration: underline;
 }
 
 footer ~ p{
