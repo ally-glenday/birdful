@@ -180,33 +180,23 @@ p ~ ul {
 
 /* ------------------------------  BIRD ID PAGE ---------------------------------------------- */ 
 
-h1:not(#main-page-heading){
+h1{
   font-size: 8vw;
 }
 
-/* ----- Bird ID List Page h2  ------- */ 
+/* ----- Bird ID List Page h2, e.g. large text 'Gardens & Forests' ------- */ 
 .bird-list h2{
-    font-size: 12vw;
-    font-weight: 700;
+    font-size: 8vw;
+    font-weight: 300;
     text-align: center;
     position: relative;
-    bottom: 1.2em;
+    bottom: 1.7em;
+    color: var(--mainBackgroundColour);
+    background-color: #375b3d;
+    padding: 1.2%;
   
   }
-.scroll-container{
-  position: relative;
-}
 
-
-
-
-  /* Targets bird id h2 (gardens and parks) */ 
-/* #gardens_and_parks h2, #forests_and_woodlands h2, #ponds_and_water h2{
-  font-size: 8vw;
-  margin: 0 auto;
-  max-width: 80vw;
-  
-} */
 
 /* ----- Targets Bird List ul (Gardens, Forests etc) ------- */ 
 .bird-list ul{
@@ -217,30 +207,6 @@ h1:not(#main-page-heading){
   }
 
 
-
-
-/* .habitat-grid-wrapper{
-  display: grid;
-  
-} */
-
-/* .habitat-grid-wrapper > *{
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-} */
-
-/* .habitat-grid-items{
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
-.habitat-grid-items img{
-  z-index: -1;
-} */
-
-
-
-
 /* ----- Bird ID List Page background images  ------- */ 
 .bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
   display: inline-block;
@@ -249,12 +215,12 @@ h1:not(#main-page-heading){
   background-size: 100%;
   background-repeat: no-repeat; 
   padding: 55% 10%;
-  font-size: 3.3vw;
+  font-size: 3.5vw;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   margin-top: 5%;
-  color: beige;
+  color: var(--mainBackgroundColour);
 
 }
 
@@ -286,38 +252,41 @@ h1:not(#main-page-heading){
 
 /* Bird card illustration & bird name container only */
   .bird-picture{
-    border: .5em solid #3E3E3E;
-    border-radius: .5em;
+    border: 2vw #cfcfc8 solid;
+    border-radius: 4vw;
     
   
   }
 
-  /* Bird card illustration (makes img 100% of the container */
+/* Bird card illustration (makes img 100% of the container */
   .bird-picture img{
     width: 100%;
     height: auto;
-    border-radius: .5em .5em 0 0;
+    border-radius: .4em .4em 0 0;
     
   }
 
-
+/* Bird card title (on specific bird page, e.g. blue_tit.html)  */
 .bird-picture h1{
   font-size: 10vw;
 }
 
+
+/* Bird card icons (e.g. blue_tit.html)  */
 .bird-id-card ul{
-  margin: 1%;
-  padding: 0%;
   border-radius: 1em;
   background-color: #e1ece1;
+  border: .5em solid lightgray;
+  padding: 5%;
+}
+/* Targets 'Description' and 'Spotting Tip' (e.g. blue_tit.html)  */
+.bird-id-card h2{
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 2%;
+  margin-top: 10%;
 }
 
-
-
-
-
-
-  
 /* Targets bird card name, e.g. Blue Tit */ 
   .bird-id-card h1{
     margin-top: -1%;
@@ -325,9 +294,8 @@ h1:not(#main-page-heading){
     background-color: #3E3E3E;
     color: white;
     width: 100%;
-
     font-weight: 500;
-    font-size: 9vw;
+    font-size: 12vw;
     letter-spacing: 2px;
   }
 /* Targets bird card paragraphs, top and bottom */ 
@@ -429,13 +397,13 @@ h1:not(#main-page-heading){
   grid-template-columns: 10fr 40fr 10fr 40fr;
   gap: 10% 2%;
   font-size: 5vw;
+}
+/* Targets only main bird id page icons */
+.list-bird-card ul{
   margin: 2% 5% 5% 5%;
   padding: 2%;
 }
 
-.bird-id-card ul{
-  border: .5em solid lightgray;
-}
 
 /* Targets key icons, both on bird id page and individual bird cards */
 .list-bird-card li, .bird-id-card li{
@@ -603,3 +571,25 @@ audio{
   width: 100%;
   height: auto;
 } 
+
+
+footer{
+width: 100vw;
+  
+}
+
+footer li{
+  background-color: #364542;
+  color: rgb(236, 236, 236);
+  font-size: 5vw;
+  padding: 2%;
+}
+
+footer ~ a, footer a:visited{
+  text-decoration: none;
+}
+
+footer ~ p{
+  width: 80%;
+  margin: auto;
+}
