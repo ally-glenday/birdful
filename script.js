@@ -5,12 +5,12 @@ var blueTitCheckbox = document.getElementById("blue-tit-checkbox");
 function playBlueTitCall(){
   if(blueTitCheckbox.checked){
     blueTitAudio.play();
-    blueTitLabel.innerHTML("Hey");
+    
     
   }
   else{
     blueTitAudio.pause();  
-    blueTitLabel.innerHTML("Ho");
+
   }
 } 
  
@@ -25,6 +25,32 @@ function playGreatTitCall(){
   }
   else{
     greatTitAudio.pause();  
+  }
+}
+
+/* Coal Tit Call */
+const longTailedTitAudio = document.getElementById("long-tailed-tit-audio");
+const longTailedTitCheckbox = document.getElementById("long-tailed-tit-checkbox");
+
+function playLongTailedTitCall(){
+  if(longTailedTitCheckbox.checked){
+    longTailedTitAudio.play();
+  }
+  else{
+    longTailedTitAudio.pause();  
+  }
+}
+
+/* Magpie Call */
+const magpieAudio = document.getElementById("magpie-audio");
+const magpieCheckbox = document.getElementById("magpie-checkbox");
+
+function playMagpieCall(){
+  if(magpieCheckbox.checked){
+    magpieAudio.play();
+  }
+  else{
+    magpieAudio.pause();  
   }
 }
 

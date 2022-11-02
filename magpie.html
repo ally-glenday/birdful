@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A beautiful black, white and blue medium-sized bird found accross the UK. Its iridescent feathers and long tail make this bird very striking.">
+    <meta name="keywords" content="magpie, black and white bird, rspb magpie, garden birds, rspb bird watch, common british birds, common garden birds">
+    <meta name="author" content="Ally Glenday">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/logo_final" href="images/logo_final.svg">
+    <title>Magpie | Bird ID | Birdful</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>    
+        <img src="images/icons/search-icon-final.svg" width="40" height="40" alt="Search icon, a dark grey magnifiying glass">
+        <img src="images/icons/home-button-final.svg" width="40" height="40" alt="Home icon, a dark grey bird house">
+
+    <!-- End of search bar -->
+      </nav>
+      
+
+    <div class="bird-id-card">
+
+        <div class="bird-picture"> 
+
+          <img src="images/illustrations/magpie_500px-min.jpg"
+          srcset="images/illustrations/magpie_500px-min.jpg 500w, images/illustrations/magpie_1000px-min.jpg 1000w, images/illustrations/magpie_1500px-min.jpg 1500w"
+          sizes="100vw" alt="Magpie illustration">
+
+            <h1>Magpie</h1>
+        </div> <!--Closing bird-picture div-->
+      
+        <img src="images/description_icon.svg" width="25" height="25" alt="Description icon"><h2>Description</h2>
+        <p>These beautiful black, white and blue medium-sized birds are easily recognisable and can be found all across the UK. Like their relatives the <a href="jay.html">Jay</a>, they have striking blue iridescent feathers - which are particularly beautiful when spread open in flight. </p>
+        <ul>
+          <li><img src="images/icons/calendar.svg" width="25" height="25"
+              alt="Calendar icon, illustration of a calendar"></li>
+          <li>All year</li>
+          <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
+              alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
+          <li>Gardens & forests</li>
+          <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
+              alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
+            <li>Medium / large (45cm)</li>
+            <li><label for="magpie-checkbox" onclick="playMagpieCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="magpie-checkbox" onclick="playMagpieCall()"></li>
+  
+            <audio id="magpie-audio">
+              <source src="bird_calls/magpie.mp3" type="audio/mpeg">
+              Sorry, but it appears your browser does not support the audio element.
+            </audio>
+
+        </ul>
+        
+      
+        <img src="images/spotting_tip_icon.svg" width="25" height="25" alt="Binoculars icon"><h2>Spotting Tip</h2>
+        <p>With their long tails and black, white and blue feathers, Magpies are quite unmistakable. They are often found in pairs and small flocks. Magpies are also one of the most intelligent birds in the animal kingdom.</p>
+    
+    </div><!--Closing bird-id-card div-->
+
+
+	<script src="script.js"></script>
+  </body>
+  <footer>
+  <ul>
+    <li><a href="about_birdful.html">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="">Creative Commons</a></li>
+  </ul>
+  <p>Birdful 2022</p>
+  </footer>
+</html>
