@@ -54,6 +54,19 @@ function playMagpieCall(){
   }
 }
 
+/* Wood Pigeon Call */
+const woodPigeonAudio = document.getElementById("wood-pigeon-audio");
+const woodPigeonCheckbox = document.getElementById("wood-pigeon-checkbox");
+
+function playWoodPigeonCall(){
+  if(woodPigeonCheckbox.checked){
+    woodPigeonAudio.play();
+  }
+  else{
+    woodPigeonAudio.pause();  
+  }
+}
+
 
 
 
