@@ -22,6 +22,7 @@ const greatTitCheckbox = document.getElementById("great-tit-checkbox");
 function playGreatTitCall(){
   if(greatTitCheckbox.checked){
     greatTitAudio.play();
+    
   }
   else{
     greatTitAudio.pause();  
@@ -64,6 +65,19 @@ function playWoodPigeonCall(){
   }
   else{
     woodPigeonAudio.pause();  
+  }
+}
+
+/* House Sparrow Call */
+const houseSparrowAudio = document.getElementById("house-sparrow-audio");
+const houseSparrowCheckbox = document.getElementById("house-sparrow-checkbox");
+
+function playHouseSparrowCall(){
+  if(houseSparrowCheckbox.checked){
+    houseSparrowAudio.play();
+  }
+  else{
+    houseSparrowAudio.pause();  
   }
 }
 
