@@ -258,7 +258,6 @@ h1{
     margin: 0 auto;
     /* box-shadow: 0 8px 6px -2px black; */
     
-  
   }
 
 /* Bird card illustration (makes img 100% of the container */
@@ -274,6 +273,9 @@ h1{
   font-size: 10vw;
 } */
 
+.content-wrapper{
+  background-color: rgb(245, 239, 229);
+}
 
 /* Bird card icons (e.g. blue_tit.html)  */
 .bird-id-card ul{
@@ -307,7 +309,7 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
     color: white;
     width: 100%;
     font-weight: 500;
-    font-size: 10vw;
+    font-size: 11vw;
     letter-spacing: 2px;
     border-radius: 0 0 1.5vw 1.5vw;
   }
@@ -316,6 +318,7 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
     padding: 5% 3%;
     line-height: 1.2;
     font-size: 1.1em;
+    margin-top: 8%;
   }
 
 /* Displays ul as grid (bird key info) */
@@ -558,13 +561,16 @@ label{
   background-image: url("images/icons/bird_call_icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  text-decoration: underline;
   
   }
+
 
   label:focus{
   
   }
 
+ 
 
 
 /* Sets all bird card checkboxes so they are not visible on screen, but are still accesible for screenreaders to play/ pause with one click */ 

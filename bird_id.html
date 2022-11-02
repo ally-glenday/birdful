@@ -177,7 +177,10 @@
           </a>
           <!-- <audio controls src="bird_calls/blue_tit.mp3">Play call</audio> -->
           <!--JavaScript fallback if disabled-->
-
+          <audio id="blue-tit-audio">
+            <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+            Sorry, but it appears your browser does not support the audio element.
+          </audio>
           <ul>
             <li><img src="images/icons/calendar.svg" width="25" height="25"
                 alt="Calendar icon, illustration of a calendar"></li>
@@ -188,13 +191,8 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
-
-            <audio id="blue-tit-audio">
-              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-              Sorry, but it appears your browser does not support the audio element.
-            </audio>
+            <li><label id="blue-tit-label" for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox"></li>
 
           </ul>
         </div>
@@ -217,11 +215,11 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="great-tit-checkbox" onclick="playGreatTitCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="great-tit-checkbox" onclick="playGreatTitCall()"></li>
 
-            <audio id="blue-tit-audio">
-              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+            <audio id="great-tit-audio">
+              <source src="bird_calls/great_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
 
@@ -250,10 +248,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -282,10 +280,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -312,10 +310,10 @@
                   <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                       alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
                   <li>Very small (12cm)</li>
-                  <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                      call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+                  <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                      call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
         
-                  <audio id="blue-tit-audio">
+                  <audio class="audio">
                     <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
                     Sorry, but it appears your browser does not support the audio element.
                   </audio>
@@ -342,10 +340,10 @@
                 <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                     alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
                 <li>Very small (12cm)</li>
-                <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                    call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+                <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                    call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
       
-                <audio id="blue-tit-audio">
+                <audio class="audio">
                   <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
                   Sorry, but it appears your browser does not support the audio element.
                 </audio>
@@ -372,10 +370,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -403,10 +401,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -433,10 +431,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -463,10 +461,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -493,10 +491,10 @@
           <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
               alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
           <li>Very small (12cm)</li>
-          <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+          <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-          <audio id="blue-tit-audio">
+          <audio class="audio">
             <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
             Sorry, but it appears your browser does not support the audio element.
           </audio>
@@ -523,10 +521,10 @@
                 <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                     alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
                 <li>Very small (12cm)</li>
-                <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                    call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+                <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                    call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
       
-                <audio id="blue-tit-audio">
+                <audio class="audio">
                   <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
                   Sorry, but it appears your browser does not support the audio element.
                 </audio>
@@ -553,10 +551,10 @@
                   <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                       alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
                   <li>Very small (12cm)</li>
-                  <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                      call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+                  <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                      call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
       
-                  <audio id="blue-tit-audio">
+                  <audio class="audio">
                     <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
                     Sorry, but it appears your browser does not support the audio element.
                   </audio>
@@ -583,10 +581,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -613,10 +611,10 @@
                     <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                         alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
                     <li>Very small (12cm)</li>
-                    <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                        call</label><input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+                    <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                        call</label><input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
         
-                    <audio id="blue-tit-audio">
+                    <audio class="audio">
                       <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
                       Sorry, but it appears your browser does not support the audio element.
                     </audio>
@@ -643,10 +641,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
   
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -706,10 +704,10 @@
           <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
               alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
           <li>Very small (12cm)</li>
-          <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+          <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-          <audio id="blue-tit-audio">
+          <audio class="audio">
             <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
             Sorry, but it appears your browser does not support the audio element.
           </audio>
@@ -736,10 +734,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -766,10 +764,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -796,10 +794,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -826,10 +824,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -857,10 +855,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -887,10 +885,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -917,10 +915,10 @@
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
   
-        <audio id="blue-tit-audio">
+        <audio class="audio">
           <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
@@ -947,10 +945,10 @@
       <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
           alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
       <li>Very small (12cm)</li>
-      <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-          call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+      <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+          call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-      <audio id="blue-tit-audio">
+      <audio class="audio">
         <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
         Sorry, but it appears your browser does not support the audio element.
       </audio>
@@ -988,10 +986,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -1018,10 +1016,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -1048,10 +1046,10 @@
           <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
               alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
           <li>Very small (12cm)</li>
-          <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+          <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-          <audio id="blue-tit-audio">
+          <audio class="audio">
             <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
             Sorry, but it appears your browser does not support the audio element.
           </audio>
@@ -1079,10 +1077,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
@@ -1109,10 +1107,10 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="playBlueTitCall()"></li>
+            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
 
-            <audio id="blue-tit-audio">
+            <audio class="audio">
               <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>

@@ -1,15 +1,20 @@
 /* Blue Tit Call */
-const blueTitAudio = document.getElementById("blue-tit-audio"); 
-const blueTitCheckbox = document.getElementById("blue-tit-checkbox");
+var blueTitAudio = document.getElementById("blue-tit-audio"); 
+var blueTitCheckbox = document.getElementById("blue-tit-checkbox");
 
 function playBlueTitCall(){
   if(blueTitCheckbox.checked){
     blueTitAudio.play();
+    blueTitLabel.innerHTML("Hey");
+    
   }
   else{
     blueTitAudio.pause();  
+    blueTitLabel.innerHTML("Ho");
   }
-}
+} 
+ 
+
 /* Great Tit Call */
 const greatTitAudio = document.getElementById("great-tit-audio");
 const greatTitCheckbox = document.getElementById("great-tit-checkbox");
@@ -22,6 +27,8 @@ function playGreatTitCall(){
     greatTitAudio.pause();  
   }
 }
+
+
 
 
 
