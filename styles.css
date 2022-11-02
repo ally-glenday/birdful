@@ -64,6 +64,7 @@ body {
     --mainBackgroundColour: #F7EAD9; /* Checked against foreground colour on WebAIM and is accessible */
     --mainBodyTextColour: #4D4D4D;
     --darkGreyIconColour: #2E2E2E;
+    --boxShadow: box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-family: 'Jost', 'Futura', 'Trebuchet MS', 'Arial', sans-serif; 
     background-color: var(--mainBackgroundColour);
   }
@@ -77,6 +78,7 @@ h1, h2, h3, h4, h5, h5, h6, p, label, li{
 h1{
     font-weight: 700;
     text-align: center;
+    margin-top: 5%;
 }
 
 
@@ -97,7 +99,7 @@ h1{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: #3E3E3E 2px solid;
+ 
 }
 
 #main-navigation img{
@@ -132,8 +134,12 @@ h1{
     max-width: 80vw;
     text-align: center;
 }
-#homepage-flexbox section{
+#gardens_and_parks{
+  margin-top: 10%;
+}
 
+#forests_and_woodlands, #ponds_and_water{
+  margin-top: 20%;
 }
 
 a[href="bird_id.html"]{
@@ -188,7 +194,7 @@ h1{
 /* ----- Bird ID List Page h2, e.g. large text 'Gardens & Forests' ------- */ 
 .bird-list h2{
     font-size: 8vw;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     position: relative;
     bottom: 1.7em;
@@ -205,6 +211,7 @@ h1{
       justify-content: space-between;
       max-width: 90%;
       margin: 0 auto;
+      margin-top: 5%;
   }
 
 
@@ -222,6 +229,8 @@ h1{
   text-decoration: none;
   margin-top: 5%;
   color: var(--mainBackgroundColour);
+ 
+  
 
 }
 
@@ -247,16 +256,19 @@ h1{
     width: 85vw;
     height: auto;
     margin: 0 auto;
+    margin-top: 15%;
+
 
   }
 
 /* Bird card illustration & bird name container only */
   .bird-picture{
-    /* border: 2.5vw #cfcfc8 solid; */
+  
     border-radius: 4vw;
     max-width: 82vw;
     margin: 0 auto;
-    /* box-shadow: 0 8px 6px -2px black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
     
   }
 
@@ -281,9 +293,10 @@ h1{
 .bird-id-card ul{
   border-radius: 1em;
   background-color: #e7f1f28a;
-  border: .4em solid lightgray;
+  /* border: .4em solid lightgray; */
   padding: 5%;
   margin: 5% 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* Targets 'Description' and 'Spotting Tip' (e.g. blue_tit.html)  */
 .bird-id-card h2{
@@ -310,7 +323,6 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
     width: 100%;
     font-weight: 500;
     font-size: 11vw;
-    letter-spacing: 2px;
     border-radius: 0 0 1.5vw 1.5vw;
   }
 /* Targets bird card paragraphs, top and bottom */ 
@@ -365,14 +377,16 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
 /* Targets entire bird card */ 
 .list-bird-card{
   background-color: rgb(239, 239, 239);
-  border-radius: 3vw; 
-  border: #cfcfc8 solid 2vw;
+  border-radius: 6vw; 
+  /* border: #cfcfc8 solid 2vw; */
   max-width: 85vw;
   font-size: 5vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  
+}
 
-  /* min-height: fit-content;
-  min-height: fit-content; */
+.list-bird-card:first-of-type{
+  margin-top: 10%;
 }
 
 /* Targets bird image anchor tag on card (id page) */ 
@@ -380,6 +394,8 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
   width: 100%; 
   height: auto;
   border-radius: 1vw 1vw 0 0;
+  border-radius: 6vw 6vw 0 0;
+  /* border: .2em rgba(0, 0, 0, 0.24) solid; */
 }
 
 
@@ -403,10 +419,10 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
   background-color: rgb(157, 171, 201);
 }
 
-.list-bird-card a[href="great_tit.html"] > p{
+/* .list-bird-card a[href="great_tit.html"] > p{
   background-color: rgb(105, 128, 100);
   background-color: #375b3d;
-}
+} */
 
 /* Targets key icons and sets as grid, both on bird id page and individual bird cards */
 .list-bird-card ul, .bird-id-card ul{
@@ -469,6 +485,7 @@ img[src="images/icons/bird_call_icon_new.svg"]:hover{
 img[src="images/main_gardens_final.svg"], [src="images/main_woodlands_final.svg"], [src="images/main_ponds_final.svg"], img[src="images/nature-scene.svg"]{
   width: 100%;
   height: auto;
+  
 }
 
 
