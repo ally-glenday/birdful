@@ -103,6 +103,37 @@ function playRobinCall(){
   }
 }
 
+/* Goldfinch Call */
+const goldfinchAudio = document.getElementById("goldfinch-audio");
+const goldfinchCheckbox = document.getElementById("goldfinch-checkbox");
+
+function playGoldfinchCall(){
+  if(goldfinchCheckbox.checked){
+    goldfinchAudio.play();
+  }
+  else{
+    goldfinchAudio.pause();  
+  }
+}
+
+/* Greenfinch Call */
+const greenfinchAudio = document.getElementById("greenfinch-audio");
+const greenfinchCheckbox = document.getElementById("greenfinch-checkbox");
+
+function playGreenfinchCall(){
+  if(greenfinchCheckbox.checked){
+    greenfinchAudio.play();
+  }
+  else{
+    greenfinchAudio.pause();  
+  }
+}
+
+
+
+
+
+
 
 // let audioWithControls = document.getElementsByTagName("audio");
 

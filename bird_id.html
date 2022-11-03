@@ -12,7 +12,7 @@
   gtag('config', 'G-0132DQ6R9B');
 </script>
   <meta charset="UTF-8">
-  <meta name="description" content="Identify common UK birds. Bird calls, search by colour ">
+  <meta name="description" content="Identify a bird with illustrations and bird calls. Bird identifier by colour and by habitat common UK birds. Simple bird identifier chart.">
   <meta name="keywords" content="common uk birds, identify bird, most common garden birds uk, common garden birds uk, bird list, common birds, bird calls, bird sounds">
   <meta name="author" content="Ally Glenday">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +32,24 @@
 <header>
   <noscript>JavaScript is disabled. Please turn on JavaScript for full functionality</noscript>
 
+
+  <nav id="main-navigation">
+    <!-- <a href="index.html" id="logo"><img src="images/logo_final.svg" width="50" height="50"
+        alt="Birdful logo"></a> -->
+
+        <!-- <img src="images/icons/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
+        <img src="images/icons/search-icon-final.svg" width="50" height="50"
+      alt="Search icon, a dark grey magnifiying glass"> -->
+   
+  
+
   <div class="dropdown">
 
     <input type="checkbox" id="toggle-dropdown">
+    <!-- <label for="search-toggle" class="dropdown">
+      <span></span>
+    </label> -->
+    
 
     <!-- <button onclick="toggleDropdown()" class="dropbtn">Search by Colour</button> -->
     <div id="myDropdown" class="dropdown-content">
@@ -141,19 +156,16 @@
                   </div>
                 </div>
                 <!--Closing '.dropdown' div-->
+                
+                
+              </nav>
+                
 </header>
 
 <body>
 
 
 
-  <nav id="main-navigation">
-    <!-- <a href="index.html" id="logo"><img src="images/logo_final.svg" width="50" height="50"
-        alt="Birdful logo"></a> -->
-    <img src="images/icons/search-icon-final.svg" width="50" height="50"
-      alt="Search icon, a dark grey magnifiying glass">
-    <img src="images/icons/home-button-final.svg" width="50" height="50" alt="Home icon, a dark grey bird house">
-  </nav>
 
   <h1>Find a Bird</h1>
   <!-- <h2>Search by habitat</h2>
@@ -463,6 +475,10 @@
               sizes="100vw" alt="Goldfinch illustration">
             <p>Goldfinch</p>
           </a>
+          <audio id="goldfinch-audio">
+            <source src="bird_calls/goldfinch.mp3" type="audio/mpeg">
+            Sorry, but it appears your browser does not support the audio element.
+          </audio>
           <ul>
             <li><img src="images/icons/calendar.svg" width="25" height="25"
                 alt="Calendar icon, illustration of a calendar"></li>
@@ -472,15 +488,9 @@
             <li>Gardens & forests</li>
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-            <li>Very small (12cm)</li>
+            <li>Very small (13cm)</li>
             <li><label for="goldfinch-checkbox" onclick="playGoldfinchCall()"><span id="left-padding"></span>Play
                 call</label> <input type="checkbox" id="goldfinch-checkbox" onclick="playGoldfinchCall()"></li>
-
-            <audio id="goldfinch-audio">
-              <source src="bird_calls/goldfinch.mp3" type="audio/mpeg">
-              Sorry, but it appears your browser does not support the audio element.
-            </audio>
-
           </ul>
 
         </div>
@@ -493,6 +503,10 @@
             sizes="100vw" alt="Greenfinch illustration">
           <p>Greenfinch</p>
         </a>
+        <audio id="greenfinch-audio">
+          <source src="bird_calls/greenfinch.mp3" type="audio/mpeg">
+          Sorry, but it appears your browser does not support the audio element.
+        </audio>
         <ul>
           <li><img src="images/icons/calendar.svg" width="25" height="25"
               alt="Calendar icon, illustration of a calendar"></li>
@@ -502,15 +516,9 @@
           <li>Gardens & forests</li>
           <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
               alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-          <li>Very small (12cm)</li>
-          <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
-
-          <audio class="audio">
-            <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
-            Sorry, but it appears your browser does not support the audio element.
-          </audio>
-
+          <li>Small (15cm)</li>
+          <li><label for="greenfinch-checkbox" onclick="playGreenfinchCall()"><span id="left-padding"></span>Play
+              call</label> <input type="checkbox" id="greenfinch-checkbox" onclick="playGreenfinchCall()"></li>
         </ul>
 
       </div>
