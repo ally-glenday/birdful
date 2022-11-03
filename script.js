@@ -5,12 +5,9 @@ var blueTitCheckbox = document.getElementById("blue-tit-checkbox");
 function playBlueTitCall(){
   if(blueTitCheckbox.checked){
     blueTitAudio.play();
-    
-    
   }
   else{
     blueTitAudio.pause();  
-
   }
 } 
  
@@ -22,7 +19,6 @@ const greatTitCheckbox = document.getElementById("great-tit-checkbox");
 function playGreatTitCall(){
   if(greatTitCheckbox.checked){
     greatTitAudio.play();
-    
   }
   else{
     greatTitAudio.pause();  
@@ -80,6 +76,42 @@ function playHouseSparrowCall(){
     houseSparrowAudio.pause();  
   }
 }
+
+/* Tree Sparrow Call */
+const treeSparrowAudio = document.getElementById("tree-sparrow-audio");
+const treeSparrowCheckbox = document.getElementById("tree-sparrow-checkbox");
+
+function playTreeSparrowCall(){
+  if(treeSparrowCheckbox.checked){
+    treeSparrowAudio.play();
+  }
+  else{
+    treeSparrowAudio.pause();  
+  }
+}
+
+/* Robin Call */
+const robinAudio = document.getElementById("robin-audio");
+const robinCheckbox = document.getElementById("robin-checkbox");
+
+function playRobinCall(){
+  if(robinCheckbox.checked){
+    robinAudio.play();
+  }
+  else{
+    robinAudio.pause();  
+  }
+}
+
+
+// let audioWithControls = document.getElementsByTagName("audio");
+
+// if(audioWithControls.hasAttribute("controls")){
+//   audioWithControls.style.display("none");
+// }
+// else{
+
+// }
 
 
 
