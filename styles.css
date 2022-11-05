@@ -95,6 +95,15 @@ h1{
 }
 
 
+/* ---------------------------- Navigation ------------------------------- */
+
+label #search-toggle{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+
 /* Targets search and home menu icon & sets search icon and home button to right */ 
 #main-navigation{
   display: flex;
@@ -233,8 +242,9 @@ h1{
   text-decoration: none;
   margin-top: 5%;
   color: var(--mainBackgroundColour);
-  
   transition: 0.5s;
+
+  
 
 
 
@@ -249,6 +259,8 @@ h1{
 }
 .bird-list a[href="#gardens_and_parks"]:hover, a[href="#forests_and_woodlands"]:hover, a[href="#ponds_and_water"]:hover{
   transform: translate(0, -20px);
+
+  
 }
 
 
@@ -286,7 +298,7 @@ h1{
 }
 /* Hover state for links in 'Description' and 'Spotting Tip' */
 .bird-id-card a:hover{
-  color: rgb(154, 123, 63);
+  color: rgb(209, 147, 33);
 }
 
 /* Bird card illustration & bird name container only */
@@ -390,6 +402,7 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
   font-size: 5vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
+  transition-delay: .2s, .2s;
 }
 
 /* Transitions entire bird card on hover */ 
@@ -632,7 +645,7 @@ footer ~ p{
   margin: auto;
 }
 
-/* --------------------------- Media Queries ------------------------- */
+/* ------------------------------------------ Media Queries ------------------------------------------- */
 /* Medium-sized devices, e.g. tablets */
 @media only screen and (min-width: 760px) {
 
@@ -650,7 +663,7 @@ footer ~ p{
 }
 
 a[href="bird_id.html"]{
-  display: inline-block;
+   display: inline-block;
    background-color: #3E3E3E;
    color: #F8F7F7;
    font-size: 3vw;
@@ -675,8 +688,14 @@ a[href="bird_id.html"]{
   
   /* Targets entire bird card */ 
   .list-bird-card{
-    max-width: 40vw;
-    max-height: 60vh;
+    min-width: 20vw;
+    min-height: auto;
+    max-width: 35vw;
+    max-height: auto;
+   
+   
+    
+    
     row-gap: .5em;
     margin: 3%;
   }
@@ -731,7 +750,7 @@ a[href="bird_id.html"]{
   }
 
   .bird-picture{
-    max-width: 50vw;
+   
     margin-right: 5%;
     float: left;
   }
