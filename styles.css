@@ -140,6 +140,7 @@ header{
     width: 100vw;
     height: auto;
     margin-top: 0%;
+    z-index: 1;
    
     
 }
@@ -150,8 +151,9 @@ header{
   background-color: rgb(232, 183, 23);
   border-radius: 50vw;
   position: fixed;
-  bottom: 18em;
-  left: 15em;
+  bottom: 30em;
+  left: 80em;
+  z-index: -1;
 }
 
 /* Targets homepage navigation to different sections, e.g. 'Identify a Bird' */ 
@@ -232,11 +234,21 @@ h1{
   margin-top: 5%;
   color: var(--mainBackgroundColour);
   
-  position: relative;
-  transition: bottom ease-in-out 5s;
+  transition: 0.5s;
+
+
+
+
+  /*
+  .hover-item {
+    transition: 0.3s;
+  }
+  .hover-item:hover {
+    transform: translate(0, -10px);
+  } */
 }
 .bird-list a[href="#gardens_and_parks"]:hover, a[href="#forests_and_woodlands"]:hover, a[href="#ponds_and_water"]:hover{
-  top: 1em;
+  transform: translate(0, -20px);
 }
 
 
@@ -285,7 +297,6 @@ h1{
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  
-    
   }
 
 /* Bird card illustration (makes img 100% of the container */
@@ -378,8 +389,14 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
   max-width: 80vw;
   font-size: 5vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- 
+  transition: 0.5s;
 }
+
+/* Transitions entire bird card on hover */ 
+.list-bird-card:hover{
+  transform: translate(0px, -10px);
+}
+
 
 .list-bird-card:first-of-type{
   margin-top: 10%;
@@ -617,7 +634,7 @@ footer ~ p{
 
 /* --------------------------- Media Queries ------------------------- */
 /* Medium-sized devices, e.g. tablets */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 760px) {
 
   #main-page-heading{
     font-size: 6vw;
@@ -659,7 +676,8 @@ a[href="bird_id.html"]{
   /* Targets entire bird card */ 
   .list-bird-card{
     max-width: 40vw;
-    row-gap: 1em;
+    max-height: 60vh;
+    row-gap: .5em;
     margin: 3%;
   }
   .list-bird-card ul{
@@ -669,22 +687,32 @@ a[href="bird_id.html"]{
     margin-top: 3%;
   }
   .list-bird-card a > p{
-    font-size: 2vh;
-    max-height: 10vw;
+    font-size: 2vw;
+    max-height: 2vw;
   }
   .bird-picture{
-    max-width: 75vw;
-    
+    max-width: 70vw; 
   }
 
-  .bird-id-card{
+  .bird-id-card h1{
+    font-size: 5vw;
+  }
 
+  .bird-id-card ul{
+    font-size: 3vw;
+    column-gap: 1;
+  }
+
+  footer li{
+    font-size: 2vw;
+    padding: 1%;
+    padding-left: 3%;
   }
 
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1020px) {
 
   img[src="images/nature_scene_homepage.svg"]{
     width: 100%;
@@ -695,10 +723,29 @@ a[href="bird_id.html"]{
   .list-bird-card a > p{
     font-size: 4vh;
     max-height: 10vw;
+  
   }
   
   .list-bird-card ul{
 
   }
+
+  .bird-picture{
+    max-width: 50vw;
+    margin-right: 5%;
+    float: left;
+  }
+  .bird-id-card h1{
+    font-size: 2vw;
+  }
+
+  .bird-id-card ul{
+    font-size: 2vw;
+  }
+
+  .bird-id-card p{
+    font-size: 2vw;
+  }
+
 
 }
