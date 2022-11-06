@@ -45,9 +45,9 @@
 
   <div class="dropdown">
 
-    <input type="checkbox" id="toggle-dropdown">
-    <label for="search-toggle" class="dropdown">
-      <span></span>
+    <input type="checkbox" class="toggle-dropdown" id="toggle-dropdown">
+    <label for="toggle-dropdown" class="toggle-dropdown">
+      
     </label>
     
 
@@ -174,9 +174,9 @@
   <section class="bird-list">
     <nav>
       <ul>
-        <li><a href="#gardens_and_parks">Gardens & Parks</a></li>
-        <li><a href="#forests_and_woodlands">Forest & Woodlands</a></li>
-        <li><a href="#ponds_and_water">Ponds & Water</a></li>
+        <li><a aria-label="Go to Gardens & Parks" href="#gardens_and_parks">Gardens & Parks</a></li>
+        <li><a aria-label="Go to Forest & Woodlands" href="#forests_and_woodlands">Forest & Woodlands</a></li>
+        <li><a aria-label="Go to Water & Ponds" href="#ponds_and_water">Ponds & Water</a></li>
       </ul>
     </nav>
 
@@ -214,7 +214,7 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
+            <li><label aria-label="Play / Pause Blue Tit Call" for="blue-tit-checkbox" onclick="playBlueTitCall()"><span id="left-padding"></span>Play
                 call</label> <input type="checkbox" id="blue-tit-checkbox"></li>
 
           </ul>
@@ -238,7 +238,7 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (14cm)</li>
-            <li><label for="great-tit-checkbox" onclick="playGreatTitCall()"><span id="left-padding"></span>Play
+            <li><label aria-label="Play / Pause Great Tit Call" for="great-tit-checkbox" onclick="playGreatTitCall()"><span id="left-padding"></span>Play
                 call</label> <input type="checkbox" id="great-tit-checkbox" onclick="playGreatTitCall()"></li>
 
             <audio id="great-tit-audio">
@@ -271,7 +271,7 @@
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
             <li>Very small (11cm)</li>
-            <li><label for="coal-tit-checkbox" onclick="playCoalTitCall()"><span id="left-padding"></span>Play
+            <li><label aria-label="Play / Pause Coal Tit Call" for="coal-tit-checkbox" onclick="playCoalTitCall()"><span id="left-padding"></span>Play
                 call</label> <input type="checkbox" id="coal-tit-checkbox" onclick="playCoalTitCall()"></li>
 
             <audio id="coal-tit-audio">

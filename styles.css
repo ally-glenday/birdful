@@ -97,12 +97,6 @@ h1{
 
 /* ---------------------------- Navigation ------------------------------- */
 
-label #search-toggle{
-  height: 100px;
-  width: 100px;
-  background-color: red;
-}
-
 
 /* Targets search and home menu icon & sets search icon and home button to right */ 
 #main-navigation{
@@ -114,34 +108,89 @@ label #search-toggle{
   
 }
 
-.dropdown span{
-  background-color: black;
-  height: 100px;
-  width: 100px;
+.toggle-dropdown{
+  display: block;
+  height: 10vh;
+  width: 10vw;
+  background-image: url("images/icons/search-icon-final.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+
+
+.toggle-dropdown:checked, #toggle-dropdown:checked ~ *{
+  display: block;
+
+}
+
+
+.main-menu{
+  display: block;
+}
+
+.sub-menu .sub-menu-content{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.sub-menu-content{
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.sub-menu:hover .sub-menu-content {
+  display: block;
+  
+}
+
+input{
+  visibility: hidden;
+}
 
 header{
   background-color: rgba(207, 216, 172, 0.157);
   border-bottom: 1px solid grey;
 }
 
-/* #main-navigation img{
-  padding: 2%;
-} */
-
-/* Sets logo to left hand side of screen */ 
-/* #logo{
-  margin-right: auto;
-} */
 
 
 
-
-
-
-
-
+/* ---------------------------Homepage ---------------------- */ 
 
 
 /* Targets main homepage SVG image of Kingfisher and river scene */ 
@@ -198,7 +247,7 @@ a[href="bird_id.html"]{
 }
 
 
-/* ------------------------------  BIRD ID PAGE ---------------------------------------------- */ 
+/* ------------------------------  Bird ID Page ----------------------------------- */ 
 
 h1{
   font-size: 8vw;
@@ -485,7 +534,7 @@ text-align: center;
 
 /* Targets icons */
 
-img[src="images/icons/bird_call_icon_new.svg"]{
+/* img[src="images/icons/bird_call_icon_new.svg"]{
   height: 30px;
   width: 30px;
 }
@@ -493,7 +542,7 @@ img[src="images/icons/bird_call_icon_new.svg"]{
 img[src="images/icons/bird_call_icon_new.svg"]:hover{
   height: 50px;
   width: 50px;
-}
+} */
 
 
 
@@ -513,73 +562,8 @@ html{
 
 
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-/* #toggle-dropdown{
-  background-image: url("images/search-icon-final.svg");
-} */
-
-#toggle-dropdown:checked ~ *{
-  display: block;
-
-}
-
-
-.main-menu{
-  display: block;
-}
-
-.sub-menu .sub-menu-content{
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  
-}
-
-.sub-menu-content{
-  display: none;
-  width: 100%;
-  z-index: 1;
-}
-
-
-.sub-menu:hover .sub-menu-content {
-  display: block;
-  
-}
-
-
-
-
-/* Bird call audio */
-label{
+/* Targets bird call audio */
+li label{
   width: 100%;
   height: auto;
   display: block;
@@ -598,7 +582,7 @@ label{
  
 
 
-/* Sets all bird card checkboxes so they are not visible on screen, but are still accesible for screenreaders to play/ pause with one click */ 
+/* Sets all bird card checkboxes so they are not visible on screen, but are still accessible for screenreaders to play/ pause with one click */ 
 .list-bird-card input[type=checkbox], .bird-id-card input[type=checkbox]{
   width: 0px;
   height: 0px;
