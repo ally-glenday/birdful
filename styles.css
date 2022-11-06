@@ -101,13 +101,16 @@ h1{
 /* Targets search and home menu icon & sets search icon and home button to right */ 
 #main-navigation{
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 90vw;
-  padding: 5% 2%;
+  justify-content: end;
   
 }
 
+header{
+  background-color: rgba(207, 216, 172, 0.157);
+  border-bottom: 1px solid grey;
+}
+
+/* Styles label so it has background image of search icon */
 .toggle-dropdown{
   display: block;
   height: 10vh;
@@ -115,30 +118,37 @@ h1{
   background-image: url("images/icons/search-icon-final.svg");
   background-repeat: no-repeat;
   background-size: contain;
+ 
 }
 
+.toggle-dropdown:focus{
+
+}
 
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Sets the content (colours and bird names) as display none as default */
 .dropdown-content {
   display: none;
   position: absolute;
+  
   background-color: #f6f6f6;
   min-width: 230px;
-  overflow: auto;
+  overflow: scroll;
   border: 1px solid #ddd;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(124, 18, 18);
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
+
 
 .dropdown a:hover {background-color: #ddd;}
 
@@ -164,6 +174,7 @@ h1{
   font-family: inherit;
   margin: 0;
   
+  
 }
 
 .sub-menu-content{
@@ -176,16 +187,13 @@ h1{
 .sub-menu:hover .sub-menu-content {
   display: block;
   
+  
 }
 
-input{
+header input {
   visibility: hidden;
 }
 
-header{
-  background-color: rgba(207, 216, 172, 0.157);
-  border-bottom: 1px solid grey;
-}
 
 
 
