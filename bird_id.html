@@ -50,10 +50,7 @@
       
     </label>
     
-
-    <!-- <button onclick="toggleDropdown()" class="dropbtn">Search by Colour</button> -->
     <div id="myDropdown" class="dropdown-content">
-      <!--     <input type="text" placeholder="Search by colour" id="myInput" onkeyup="filterFunction()"> -->
       <div class="main-menu">
         <div class="sub-menu">
           <p>Grey</p>
@@ -63,8 +60,6 @@
             <a href="coal_tit.html">Coal Tit</a>
           </div>
           <!--Closing sub menu div-->
-
-
 
 
           <div class="sub-menu">
@@ -83,9 +78,9 @@
               <!--Opening sub menu div-->
               <p>Green</p>
               <div class="sub-menu-content">
-                <a href="#base">Ring Necked Parakeet</a>
-                <a href="#base">Greenfinch</a>
-                <a href="#base">Green Woodpecker</a>
+                <a href="ring_necked_parakeet.html">Ring Necked Parakeet</a>
+                <a href="greenfinch.html">Greenfinch</a>
+                <a href="greenwoodpecker.html">Green Woodpecker</a>
 
               </div>
               <!--Closing sub menu div-->
@@ -96,10 +91,10 @@
                 <!--Opening sub menu div-->
                 <p>Black</p>
                 <div class="sub-menu-content">
-                  <a href="#base">Blackbird</a>
-                  <a href="#base">Crow</a>
-                  <a href="#base">Great Spotted Woodpecker</a>
-                  <a href="#base">Little Grebe</a>
+                  <a href="blackbird.html">Blackbird</a>
+                  <a href="crow.html">Crow</a>
+                  <a href="great_spotted_woodpecker.html">Great Spotted Woodpecker</a>
+                  <a href="little_grebe.html">Little Grebe</a>
                 </div>
                 <!--Closing sub menu div-->
 
@@ -107,10 +102,10 @@
                   <!--Opening sub menu div-->
                   <p>White</p>
                   <div class="sub-menu-content">
-                    <a href="#base">Mute Swan</a>
-                    <a href="#base">Pied Wagtail</a>
-                    <a href="#base">Long Tailed Tit</a>
-                    <a href="#base">Little Grebe</a>
+                    <a href="mute_swan.html">Mute Swan</a>
+                    <a href="pied_wagtail.html">Pied Wagtail</a>
+                    <a href="long_tailed_tit.html">Long Tailed Tit</a>
+                    <a href="little_grebe.html">Little Grebe</a>
                   </div>
                   <!--Closing sub menu div-->
 
@@ -118,11 +113,10 @@
                     <!--Opening sub menu div-->
                     <p>Orange | Red</p>
                     <div class="sub-menu-content">
-                      <a href="#base">Robin</a>
-                      <a href="#base">Chaffinch</a>
-                      <a href="#base">Hobby</a>
-                      <a href="#base">Moorhen</a>
-                      <a href="#base">Goldfinch</a>
+                      <a href="robin.html">Robin</a>
+                      <a href="chaffinch.html">Chaffinch</a>
+                      <a href="hobby.html">Hobby</a>
+                      <a href="goldfinch.html">Goldfinch</a>
                     </div>
                     <!--Closing sub menu div-->
 
@@ -130,10 +124,10 @@
                       <!--Opening sub menu div-->
                       <p>Yellow | Gold</p>
                       <div class="sub-menu-content">
-                        <a href="#base">Goldcrest</a>
-                        <a href="#base">Goldfinch</a>
-                        <a href="#base">Blue Tit</a>
-                        <a href="#base">Great Tit</a>
+                        <a href="goldcrest.html">Goldcrest</a>
+                        <a href="goldfinch.html">Goldfinch</a>
+                        <a href="blue_tit.html">Blue Tit</a>
+                        <a href="great_tit.html">Great Tit</a>
 
                       </div>
                       <!--Closing sub menu div-->
@@ -142,10 +136,10 @@
                         <!--Opening sub menu div-->
                         <p>Brown</p>
                         <div class="sub-menu-content">
-                          <a href="#base">House Sparrow</a>
-                          <a href="#base">Tree Sparrow</a>
-                          <a href="#base">Wren</a>
-                          <a href="#base">Treecreeper</a>
+                          <a href="house_sparrow.html">House Sparrow</a>
+                          <a href="tree_sparrow.html">Tree Sparrow</a>
+                          <a href="wren.html">Wren</a>
+                          <a href="treecreeper.html">Treecreeper</a>
                         </div>
                         <!--Closing sub menu div-->
 
@@ -540,12 +534,12 @@
                 <li>Gardens & forests</li>
                 <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                     alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                <li>Very small (12cm)</li>
-                <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-                    call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+                <li>Very small (14cm)</li>
+                <li><label for="chaffinch-checkbox" onclick="playChaffinchCall()"><span id="left-padding"></span>Play
+                    call</label> <input type="checkbox" id="chaffinch-checkbox" onclick="()"></li>
       
-                <audio class="audio">
-                  <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+                <audio id="chaffinch-audio">
+                  <source src="bird_calls/chaffinch.mp3" type="audio/mpeg">
                   Sorry, but it appears your browser does not support the audio element.
                 </audio>
       
@@ -570,12 +564,12 @@
                   <li>Gardens & forests</li>
                   <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                       alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                  <li>Very small (12cm)</li>
-                  <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-                      call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+                  <li>Medium (25cm)</li>
+                  <li><label for="blackbird-checkbox" onclick="playBlackbirdCall()"><span id="left-padding"></span>Play
+                      call</label> <input type="checkbox" id="blackbird-checkbox" onclick="playBlackbirdCall()"></li>
       
-                  <audio class="audio">
-                    <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+                  <audio id="blackbird-audio">
+                    <source src="bird_calls/blackbird.mp3" type="audio/mpeg">
                     Sorry, but it appears your browser does not support the audio element.
                   </audio>
       
@@ -600,12 +594,12 @@
             <li>Gardens & forests</li>
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-            <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+            <li>Very small (9cm)</li>
+            <li><label for="wren-checkbox" onclick="playWrenCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="wren-checkbox" onclick="playWrenCall()"></li>
 
-            <audio class="audio">
-              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+            <audio id="wren-audio">
+              <source src="bird_calls/wren.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
 
@@ -630,12 +624,12 @@
                     <li>Parks & forests</li>
                     <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                         alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-                    <li>Very small (12cm)</li>
-                    <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-                        call</label><input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+                    <li>Small (18cm)</li>
+                    <li><label for="pied-wagtail-checkbox" onclick="playPiedWagtailCall()"><span id="left-padding"></span>Play
+                        call</label><input type="checkbox" id="pied-wagtail-checkbox" onclick="playPiedWagtailCall()"></li>
         
-                    <audio class="audio">
-                      <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+                    <audio id="pied-wagtail-audio">
+                      <source src="bird_calls/pied_wagtail.mp3" type="audio/mpeg">
                       Sorry, but it appears your browser does not support the audio element.
                     </audio>
         
@@ -660,12 +654,12 @@
             <li>Parks & forests</li>
             <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
                 alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-            <li>Very small (12cm)</li>
-            <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-                call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+            <li>Medium (40cm)</li>
+            <li><label for="ring-necked-parakeet-checkbox" onclick="playRingNeckedParakeetCall()"><span id="left-padding"></span>Play
+                call</label> <input type="checkbox" id="ring-necked-parakeet-checkbox" onclick="playRingNeckedParakeetCall()"></li>
   
-            <audio class="audio">
-              <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+            <audio id="ring-necked-parakeet-audio">
+              <source src="bird_calls/ring_necked_parakeet.mp3" type="audio/mpeg">
               Sorry, but it appears your browser does not support the audio element.
             </audio>
   
@@ -720,15 +714,15 @@
           <li>All year</li>
           <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
               alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-          <li>Gardens & forests</li>
+          <li>Forests & Woodlands</li>
           <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
               alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-          <li>Very small (12cm)</li>
-          <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-              call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+          <li>Medium (23cm)</li>
+          <li><label for="great-spotted-woodpecker-checkbox" onclick="playGreatSpottedWoodpeckerCall()"><span id="left-padding"></span>Play
+              call</label> <input type="checkbox" id="great-spotted-woodpecker-checkbox" onclick="playGreatSpottedWoodpeckerCall()"></li>
 
-          <audio class="audio">
-            <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+          <audio id="great-spotted-woodpecker-audio">
+            <source src="bird_calls/great_spotted_woodpecker.mp3" type="audio/mpeg">
             Sorry, but it appears your browser does not support the audio element.
           </audio>
 
@@ -750,15 +744,15 @@
         <li>All year</li>
         <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
             alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-        <li>Gardens & forests</li>
+        <li>Forests & Woodlands</li>
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-        <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+        <li>Very small (14cm)</li>
+        <li><label for="nuthatch-checkbox" onclick="playNuthatchCall()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="nuthatch-checkbox" onclick="playNuthatchCall()"></li>
 
-        <audio class="audio">
-          <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+        <audio id="nuthatch-audio">
+          <source src="bird_calls/nuthatch.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
 
@@ -780,15 +774,15 @@
         <li>All year</li>
         <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
             alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-        <li>Gardens & forests</li>
+        <li>Forests & Woodlands</li>
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
         <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+        <li><label for="treecreeper-checkbox" onclick="playTreecreeperCall()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="treecreeper-checkbox" onclick="playTreecreeperCall()"></li>
 
-        <audio class="audio">
-          <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+        <audio id="treecreeper-audio">
+          <source src="bird_calls/treecreeper.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
 
@@ -810,15 +804,15 @@
         <li>All year</li>
         <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
             alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-        <li>Gardens & forests</li>
+        <li>Forests & Woodlands</li>
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-        <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+        <li>Medium (32cm)</li>
+        <li><label for="green-woodpecker-checkbox" onclick="playGreenWoodpeckerCall()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="green-woodpecker-checkbox" onclick="playGreenWoodpeckerCall()"></li>
 
-        <audio class="audio">
-          <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+        <audio id="green-woodpecker-audio">
+          <source src="bird_calls/green_woodpecker.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
 
@@ -830,8 +824,8 @@
      <!------------------------------ Jay --------------------------->
      <div class="list-bird-card">
       <a href="jay.html"><img src="images/illustrations/jay_500px-min.jpg"
-          srcset="images/illustrations/jay_500px-min.jpg 500w, images/illustrations/jay_1000px-min.jpg 1000w, images/illustrations/jay_1500px-min.jpg 1500w"
-          sizes= "(min-width: 300px) 50vw, 100vw" alt="Jay illustration">
+        srcset="images/illustrations/jay_500px-min.jpg 500w, images/illustrations/jay_1000px-min.jpg 1000w, images/illustrations/jay_1500px-min.jpg 1500w"
+        sizes= "(min-width: 300px) 50vw, 100vw" alt="Jay illustration">
         <p>Jay</p>
       </a>
       <ul>
@@ -840,15 +834,15 @@
         <li>All year</li>
         <li><img src="images/icons/woodlands_icon.svg" width="25" height="25"
             alt="Woodlands & Forests icon, illustration of a woodland tree"></li>
-        <li>Gardens & forests</li>
+        <li>Forests & Woodlands</li>
         <li><img src="images/icons/bird_size_icon.svg" width="25" height="25"
             alt="Bird size icon, illustration of a bird with arrow indicating size"></li>
-        <li>Very small (12cm)</li>
-        <li><label for="blue-tit-checkbox" onclick="()"><span id="left-padding"></span>Play
-            call</label> <input type="checkbox" id="blue-tit-checkbox" onclick="()"></li>
+        <li>Medium (35cm)</li>
+        <li><label for="jay-checkbox" onclick="playJayCall()"><span id="left-padding"></span>Play
+            call</label> <input type="checkbox" id="jay-checkbox" onclick="playJayCall()"></li>
 
-        <audio class="audio">
-          <source src="bird_calls/blue_tit.mp3" type="audio/mpeg">
+        <audio id="jay-audio">
+          <source src="bird_calls/jay.mp3" type="audio/mpeg">
           Sorry, but it appears your browser does not support the audio element.
         </audio>
 
