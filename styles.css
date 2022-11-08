@@ -209,6 +209,7 @@ header input {
  img[src="images/nature_scene_homepage.svg"]{
     width: 100vw;
     height: auto;
+    max-width: 100vw;
     margin-top: 0%;
     z-index: 1;
    
@@ -562,6 +563,7 @@ img[src="images/icons/bird_call_icon_new.svg"]:hover{
 img[src="images/main_gardens_final.svg"], [src="images/main_woodlands_final.svg"], [src="images/main_ponds_final.svg"], img[src="images/nature-scene.svg"]{
   width: 100%;
   height: auto;
+  /* max-height: 100%; */
   
 }
 
