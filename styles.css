@@ -97,17 +97,59 @@ h1{
 
 /* ---------------------------- Navigation ------------------------------- */
 
+#temp-home-button{
+  height: 10vh;
+  width: 10vw;
+  background-image: url(images/icons/home-button-final.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10vw;
+  right: 10vw;
+
+ 
+}
+
+/* Navigation for different pages */
+
+  /* .nav-toggle-container{
+    position: relative;
+    display: inline-block;
+
+  }
+
+.nav-toggle-container{
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  display: none;
+}
+
+
+.nav-toggle:checked ~ .nav-toggle-container{
+  display: block;
+}
+
+span{
+  background-image: url(images/icons/home-button-final.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 10vw;
+  
+} */
 
 /* Targets search and home menu icon & sets search icon and home button to right */ 
 #main-navigation{
-  display: flex;
-  justify-content: end;
-  
+
 }
 
 header{
   background-color: rgba(207, 216, 172, 0.157);
   border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: end;
+  max-height: 20vw;
 }
 
 /* Styles label so it has background image of search icon */
@@ -118,6 +160,7 @@ header{
   background-image: url("images/icons/search-icon-final.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
  
 }
 
@@ -127,14 +170,17 @@ header{
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline;
+  bottom: 10vw;
+  right: 20vw;
+  
 }
 
 /* Sets the content (colours and bird names) as display none as default */
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 10vw;
+  left: -150px;
   background-color: #f6f6f6;
   min-width: 230px;
   overflow: scroll;
@@ -197,6 +243,7 @@ header{
 header input {
   visibility: hidden;
 }
+
 
 
 
@@ -688,12 +735,8 @@ a[href="bird_id.html"]{
   .list-bird-card{
     min-width: 20vw;
     min-height: auto;
-    max-width: 35vw;
+    max-width: 36vw;
     max-height: auto;
-   
-   
-    
-    
     row-gap: .5em;
     margin: 3%;
   }
@@ -704,8 +747,8 @@ a[href="bird_id.html"]{
     margin-top: 3%;
   }
   .list-bird-card a > p{
-    font-size: 2vw;
-    max-height: 2vw;
+    font-size: 3vw;
+    
   }
   .bird-picture{
     max-width: 70vw; 
