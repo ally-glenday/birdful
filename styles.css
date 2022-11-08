@@ -97,18 +97,7 @@ h1{
 
 /* ---------------------------- Navigation ------------------------------- */
 
-#temp-home-button{
-  height: 10vh;
-  width: 10vw;
-  background-image: url(images/icons/home-button-final.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 10vw;
-  right: 10vw;
 
- 
-}
 
 /* Navigation for different pages */
 
@@ -150,29 +139,43 @@ header{
   display: flex;
   justify-content: end;
   max-height: 20vw;
+  align-items: center;
+  
+
+}
+/* Temporary home button until other pages are added */
+#temp-home-button{
+  height: 10vh;
+  width: 10vw;
+  background-image: url(images/icons/home-button-final.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5%;
+  /* position: absolute;
+  top: 10vw;
+  right: 10vw; */
 }
 
 /* Styles label so it has background image of search icon */
 .toggle-dropdown{
-  display: block;
+  display: inline-block;
   height: 10vh;
   width: 10vw;
   background-image: url("images/icons/search-icon-final.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 5%;
 
  
 }
 
-.toggle-dropdown:focus{
 
-}
 
 .dropdown {
   position: relative;
-  display: inline;
-  bottom: 10vw;
-  right: 20vw;
+  display: inline-block;
+  /* bottom: 10vw;
+  right: 20vw; */
   
 }
 
@@ -180,7 +183,8 @@ header{
 .dropdown-content {
   display: none;
   position: absolute;
-  left: -150px;
+  right: 10vw;
+  top: 10vw;
   background-color: #f6f6f6;
   min-width: 230px;
   overflow: scroll;
@@ -205,7 +209,8 @@ header{
 
 
 .toggle-dropdown:checked, #toggle-dropdown:checked ~ *{
-  display: block;
+  display: inline-block;
+ 
 
 }
 
