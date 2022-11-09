@@ -365,26 +365,17 @@ h1{
   text-decoration: none;
   margin-top: 5%;
   color: var(--mainBackgroundColour);
-  transition: 0.5s;
-
-  
 
 
 
 
-  /*
-  .hover-item {
-    transition: 0.3s;
-  }
-  .hover-item:hover {
-    transform: translate(0, -10px);
-  } */
+
 }
-.bird-list a[href="#gardens_and_parks"]:hover, a[href="#forests_and_woodlands"]:hover, a[href="#ponds_and_water"]:hover{
+/* .bird-list a[href="#gardens_and_parks"]:hover, a[href="#forests_and_woodlands"]:hover, a[href="#ponds_and_water"]:hover{
   transform: translate(0, -20px);
 
   
-}
+} */
 
 
 .bird-list a[href="#gardens_and_parks"]{
@@ -521,21 +512,26 @@ img[src="images/spotting_tip_icon.svg"], img[src="images/description_icon.svg"]{
 .list-bird-card{
   background-color: rgb(239, 239, 239);
   border-radius: 6vw; 
+  width: 80vw;
   max-width: 80vw;
   font-size: 5vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
-  transition-delay: .2s, .2s;
+  /* transition-delay: .2s, .2s; */
 }
 
 /* Transitions entire bird card on hover */ 
 .list-bird-card:hover{
-  transform: translate(0px, -10px);
+  /* transform: translate(0px, -10px); */
 }
 
 
+/* Targets first and last bird card to give them some margins at top and bottom of the list  */ 
 .list-bird-card:first-of-type{
   margin-top: 10%;
+}
+.list-bird-card:last-of-type{
+  margin-bottom: 10%;
 }
 
 /* Targets bird image anchor tag on card (id page) */ 
@@ -808,7 +804,7 @@ a[href="bird_id.html"]{
 
 
 }
-
+/* ----------- Large-sized devices, e.g. laptops & desktops ----------*/
 @media only screen and (min-width: 1020px) {
 
   img[src="images/nature_scene_homepage.svg"]{
@@ -817,6 +813,17 @@ a[href="bird_id.html"]{
     margin-top: 0%;
     
 }
+#temp-home-button{
+margin: 2% 1%;
+
+}
+
+/* Styles label so it has background image of search icon */
+.toggle-dropdown{
+
+
+}
+
 
 a[href="bird_id.html"]{
   display: inline-block;
@@ -852,6 +859,9 @@ a[href="bird_id.html"]{
   .bird-id-card h1{
     font-size: 2vw;
   }
+  .bird-id-card{
+    margin-top: 2%;
+  }
 
   .bird-id-card ul{
     font-size: 2vw;
@@ -884,6 +894,30 @@ a[href="bird_id.html"]{
   .bird-id-card p{
     margin-top: 0;
   }
+
+  /* ----- Bird ID List Page background images  ------- */ 
+.bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
+  transition: 0.5s;
+
+
+
+
+}
+.bird-list a[href="#gardens_and_parks"]:hover, a[href="#forests_and_woodlands"]:hover, a[href="#ponds_and_water"]:hover{
+  transform: translate(0, -20px);
+
+  
+}
+/* Targets entire bird card */ 
+.list-bird-card{
+
+  transition-delay: .2s, .2s;
+}
+
+/* Transitions entire bird card on hover */ 
+.list-bird-card:hover{
+  transform: translate(0px, -10px);
+}
 
 
 }
