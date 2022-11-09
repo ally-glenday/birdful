@@ -314,6 +314,7 @@ a[href="bird_id.html"]{
    margin-left: 30%;
    padding: 5%;
    border-radius: 30em;
+   z-index: 999;
    
 }
 
@@ -705,6 +706,13 @@ footer ~ p{
 /* Medium-sized devices, e.g. tablets */
 @media only screen and (min-width: 760px) {
 
+  header{
+    margin-top: 0;
+  }
+
+  a[href="bird_id.html"]{
+    z-index: 999;
+  }
   #main-page-heading{
     font-size: 6vw;
     padding: 6%;
@@ -716,6 +724,17 @@ footer ~ p{
     height: auto;
     margin-top: -12%;
     
+}
+.dropdown-content p{
+  font-size: 1.5vw;
+}
+.dropdown-content a {
+  color: royalblue;
+  font-size: 1.5vw;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
 }
 
 a[href="bird_id.html"]{
@@ -759,10 +778,9 @@ a[href="bird_id.html"]{
   }
   .list-bird-card a > p{
     font-size: 3vw;
-    
   }
   .bird-picture{
-    max-width: 70vw; 
+    max-width: 45vw; 
   }
 
   .bird-id-card h1{
@@ -817,6 +835,12 @@ a[href="bird_id.html"]{
   .bird-id-card p{
     font-size: 2vw;
   }
+
+  li img{
+    height: 45px;
+    width: 45px;
+  }
+
 
 
 }
