@@ -134,12 +134,13 @@ span{
 }
 
 header{
-  background-color: rgba(207, 216, 172, 0.157);
-  border-bottom: 1px solid grey;
+  /* background-color: rgba(207, 216, 172, 0.157); */
+  border-bottom: 2px solid var(--mainBodyTextColour);
   display: flex;
   justify-content: end;
   max-height: 20vw;
   align-items: center;
+  margin-top: 10vw;
   
 
 }
@@ -150,7 +151,7 @@ header{
   background-image: url(images/icons/home-button-final.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 5%;
+  margin: 5% 2%;
   /* position: absolute;
   top: 10vw;
   right: 10vw; */
@@ -164,9 +165,12 @@ header{
   background-image: url("images/icons/search-icon-final.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5%;
+  /* margin: 5% 0; */
 
- 
+}
+
+#temp-home-button, .toggle-dropdown{
+  
 }
 
 
@@ -194,9 +198,11 @@ header{
 
 .dropdown-content a {
   color: royalblue;
+  font-size: 3vw;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  
 }
 
 .sub-menu p{
@@ -220,7 +226,7 @@ header{
 }
 
 .sub-menu .sub-menu-content{
-  font-size: 16px;  
+  font-size: 1.5vw;  
   border: none;
   outline: none;
   color: white;
@@ -669,7 +675,7 @@ audio{
 
 
 footer{
-width: 100vw;
+width: 100%;
 margin-top: 15%;
   
 }
