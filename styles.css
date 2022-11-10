@@ -87,12 +87,12 @@ h1{
 /* ------------------------------  HOMEPAGE ---------------------------------------------- */ 
 /* Targets main homepage h1 tag, i.e. 'Discover birds with Birds */ 
 #main-page-heading{
-  font-size: 7.5vw;
+  font-size: 7vw;
   font-weight: 700;
   text-align: center;
-  margin-top: 10%;
   max-width: 100%;
   line-height: 120%;
+  padding: 2% 5%;
  
 }
 
@@ -159,6 +159,11 @@ header{
   right: 10vw; */
 }
 
+label.toggle-dropdown{
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
 /* Styles label so it has background image of search icon */
 .toggle-dropdown{
   display: inline-block;
@@ -175,7 +180,10 @@ header{
   
 }
 
-
+/* Sets a display: none to the input checkbox of colour search bar to avoid styling issues */
+#toggle-dropdown{
+  display: none;
+}
 
 .dropdown {
   position: relative;
@@ -205,6 +213,10 @@ header{
   text-decoration: none;
   display: block;
   
+}
+
+.blue-birds{
+
 }
 
 .sub-menu p{
@@ -277,15 +289,29 @@ header input {
 }
 
 #sun{
-  height: 15vw;
-  width: 15vw;
+  height: 30vw;
+  width: 30vw;
   background-color: rgb(232, 183, 23);
   border-radius: 50vw;
   position: fixed;
-  bottom: 30em;
-  left: 80em;
+  top: 80px;
+  left: 50px;
   z-index: -1;
 }
+
+
+
+/* styles.css | file:///Users/allyglenday/Documents/MA%20Web%20Design%20&%20Content%20Planning/birdful/styles.css */
+
+#sun {
+  /* height: 25vw; */
+  /* width: 25vw; */
+  /* bottom: 200px; */
+  /* left: 100px; */
+
+}
+
+
 
 /* Targets homepage navigation to different sections, e.g. 'Identify a Bird' */ 
 #homepage-flexbox{
@@ -905,8 +931,11 @@ a[href="bird_id.html"]{
 }
 .bird-list a[href="#gardens_and_parks"]:hover, a[href="#forests_and_woodlands"]:hover, a[href="#ponds_and_water"]:hover{
   transform: translate(0, -20px);
+}
 
-  
+#sun{
+  height: 25vw;
+  width: 25vw;
 }
 /* Targets entire bird card */ 
 .list-bird-card{
