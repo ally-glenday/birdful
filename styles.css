@@ -734,6 +734,10 @@ footer ~ p{
     margin-top: 0;
   }
 
+ label.toggle-dropdown, #temp-home-button{
+  height: 8vw;
+ }
+
   a[href="bird_id.html"]{
     margin-top: -10%;
     z-index: 999;
@@ -820,6 +824,8 @@ a[href="bird_id.html"]{
   .bird-id-card ul{
     font-size: 3vw;
     column-gap: 1;
+    margin: 0;
+    padding: 3%;
   }
 
   footer li{
@@ -827,12 +833,6 @@ a[href="bird_id.html"]{
     padding: 1%;
     padding-left: 3%;
   }
-
-
-}
-/* ----------- Large-sized devices, e.g. laptops & desktops ----------*/
-@media only screen and (min-width: 1020px) {
-
   img[src="images/nature_scene_homepage.svg"]{
     width: 100%;
     height: auto;
@@ -898,8 +898,8 @@ a[href="bird_id.html"]{
   }
 
   li img{
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
   }
 
   .bird-id-card h2, .bird-id-card img{
@@ -908,6 +908,7 @@ a[href="bird_id.html"]{
   img[src="images/description_icon.svg"], img[src="images/spotting_tip_icon.svg"]{
     height: 3vw;
     width: 3vw;
+    margin: 0;
   }
   .bird-id-card h2{
     font-size: 3vw;
@@ -920,6 +921,12 @@ a[href="bird_id.html"]{
   .bird-id-card p{
     margin-top: 0;
   }
+
+}
+/* ----------- Large-sized devices, e.g. laptops & desktops ----------*/
+@media only screen and (min-width: 1020px) {
+
+  
 
   /* ----- Bird ID List Page background images  ------- */ 
 .bird-list a[href="#gardens_and_parks"], a[href="#forests_and_woodlands"], a[href="#ponds_and_water"]{
@@ -936,6 +943,11 @@ a[href="bird_id.html"]{
 #sun{
   height: 25vw;
   width: 25vw;
+}
+
+li img{
+  height: 45px;
+  width: 45px;
 }
 /* Targets entire bird card */ 
 .list-bird-card{
