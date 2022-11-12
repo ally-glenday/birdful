@@ -910,19 +910,40 @@ margin: 2% 1%;
 
   .grid-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 20vh 20vh;
+    grid-area: auto;
   }
 
-  .grid-item{
+  .grid-item-one, .grid-item-two, .grid-item-three, .grid-item-four{
     border: solid black 2px;
   }
-  .grid-item:nth-child(1){
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .grid-item-one{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 1;
+  }
+
+  .grid-item-two{
+    grid-column-start: 2;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
+  }
 
+  .grid-item-three{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .grid-item-four{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
   }
 
   .list-bird-card:last-of-type{
