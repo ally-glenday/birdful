@@ -910,9 +910,9 @@ margin: 2% 1%;
 
   .grid-wrapper{
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 20vh 20vh 20vh;
-    grid-area: auto;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 50vw 50vw;
+    
   }
 
   .grid-item-one, .grid-item-two, .grid-item-three, .grid-item-four{
@@ -949,13 +949,7 @@ margin: 2% 1%;
   .list-bird-card:last-of-type{
     margin-bottom: 0%;
   }
-  .grid-item:nth-child(1){
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 4;
-
-  }
+  
 
 }
 /* ----------- Large-sized devices, e.g. laptops & desktops ----------*/
